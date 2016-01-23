@@ -1,5 +1,79 @@
 
 
+@media (max-width: 1199px) {
+  .container{
+    width: 100%;
+  }
+
+  /*body > .container{
+    padding-left: 0px;
+    padding-right: 0px;
+  }*/
+
+  .basic_info {
+    padding: 30px 40px !important;
+    margin: 0px auto 20px !important;
+  }
+
+  .ipad strong > span:last-child{
+    display: block !important;
+    padding: 10px 5px;
+    font-size: 16px;
+  }
+  .ipad strong > span:first-child{
+    display: none !important;
+  }
+  .ipad .ipad-qs{
+    display: inline-block !important;
+  }
+
+  input[type=radio], input[type=checkbox]{
+    display:none; 
+    margin:5px;
+  }
+
+  input[type=radio] + label, input[type=checkbox] + label {
+    min-width: 80px;
+    text-align: center;
+    display: inline-block;
+    background-color: #e7e7e7;
+    border-color: #ddd;
+    margin: 3px;
+    /*margin-right: 5px;
+    margin-left: 5px;*/
+    padding: 4px 10px;
+    cursor:pointer;
+  }
+
+  input[type=radio]:checked + label, input[type=checkbox]:checked + label {
+    background-image: none;
+    background-color: #C8E3FF;
+    box-shadow: 0px 0px 5px 2px rgba(51,102,153,0.42);
+    -moz-shadow: 0px 0px 5px 2px rgba(51,102,153,0.42);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(51,102,153,0.42);
+    -o-shadow: 0px 0px 5px 2px rgba(51,102,153,0.42);
+    /*transition: .2s ease;*/
+  }
+}
+
+.ipad strong > span:last-child{
+  display: none;
+}
+.ipad strong > span:first-child{
+  display: inline-block;
+}
+.ipad .ipad-qs{
+  display: none;
+}
+
+.pain-index{
+  /*background: url(../images/pain_index.jpg) no-repeat;*/
+}
+
+.double-underline{
+  border-bottom: 3px double;
+}
+
 body {
   background: url(../images/wallpaper.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -308,7 +382,7 @@ input[name=sex]:checked + label {
   -moz-shadow: 0px 0px 8px 2px rgba(51,102,153,0.42);
   -webkit-box-shadow: 0px 0px 8px 2px rgba(51,102,153,0.42);
   -o-shadow: 0px 0px 8px 2px rgba(51,102,153,0.42);
-  transition: .3s ease;
+  /*transition: .3s ease;*/
 }
 
 .basic_info {

@@ -59,13 +59,14 @@
   <meta charset="utf-8">
   <meta content='1440; url=logout.php' http-equiv='refresh'>
   <title>National Registration of Ketamine Uropathy</title>
+  <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/jumbotron.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href="css/jquery-ui.css" rel="stylesheet">
-  <link href="css/theme.css" rel="stylesheet">
-  <script src="js/jquery.min.js"></script>
+  <!-- <link href="css/theme.css" rel="stylesheet"> -->
+  <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
   <script>
     function submitForm(){
       $('#ff').submit();
@@ -86,7 +87,7 @@
      <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
