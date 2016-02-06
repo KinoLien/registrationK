@@ -22,8 +22,6 @@
   <link href="css/jumbotron.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-1.11.3.min.js"></script>
-  <script src="js/jquery-1.10.2.js"></script> 
-  <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/ketaminejq.js"></script>
@@ -584,87 +582,111 @@
             </span>
           </p>
       	</div>
-      	<div class="ipss_info">
-      		<h2>下泌尿道症狀評分表（IPSS）</h2>
-      		<p>
-      			<strong>IPSS得分-1</strong>：
-            <input name="IPSS_score1" type="hidden" value="99">
-      			<input name="IPSS_score1" type="radio" id="IPSS1_1" value="0"><label for="IPSS1_1">0、完全沒有</label>&nbsp;
-      			<input name="IPSS_score1" type="radio" id="IPSS1_2" value="1"><label for="IPSS1_2">1、偶爾</label>&nbsp;
-      			<input name="IPSS_score1" type="radio" id="IPSS1_3" value="2"><label for="IPSS1_3">2、三不五時</label>&nbsp;
-      			<input name="IPSS_score1" type="radio" id="IPSS1_4" value="3"><label for="IPSS1_4">3、一半一半</label>&nbsp;
-      			<input name="IPSS_score1" type="radio" id="IPSS1_5" value="4"><label for="IPSS1_5">4、經常</label>&nbsp;
-      			<input name="IPSS_score1" type="radio" id="IPSS1_6" value="5"><label for="IPSS1_6">5、總是</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>IPSS得分-2</strong>：
-            <input name="IPSS_score2" type="hidden" value="99">
-      			<input name="IPSS_score2" type="radio" id="IPSS2_1" value="0"><label for="IPSS2_1">0、完全沒有</label>&nbsp;
-      			<input name="IPSS_score2" type="radio" id="IPSS2_2" value="1"><label for="IPSS2_2">1、偶爾</label>&nbsp;
-      			<input name="IPSS_score2" type="radio" id="IPSS2_3" value="2"><label for="IPSS2_3">2、三不五時</label>&nbsp;
-      			<input name="IPSS_score2" type="radio" id="IPSS2_4" value="3"><label for="IPSS2_4">3、一半一半</label>&nbsp;
-      			<input name="IPSS_score2" type="radio" id="IPSS2_5" value="4"><label for="IPSS2_5">4、經常</label>&nbsp;
-      			<input name="IPSS_score2" type="radio" id="IPSS2_6" value="5"><label for="IPSS2_6">5、總是</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>IPSS得分-3</strong>：
-            <input name="IPSS_score3" type="hidden" value="99">
-      			<input name="IPSS_score3" type="radio" id="IPSS3_1" value="0"><label for="IPSS3_1">0、完全沒有</label>&nbsp;
-      			<input name="IPSS_score3" type="radio" id="IPSS3_2" value="1"><label for="IPSS3_2">1、偶爾</label>&nbsp;
-      			<input name="IPSS_score3" type="radio" id="IPSS3_3" value="2"><label for="IPSS3_3">2、三不五時</label>&nbsp;
-      			<input name="IPSS_score3" type="radio" id="IPSS3_4" value="3"><label for="IPSS3_4">3、一半一半</label>&nbsp;
-      			<input name="IPSS_score3" type="radio" id="IPSS3_5" value="4"><label for="IPSS3_5">4、經常</label>&nbsp;
-      			<input name="IPSS_score3" type="radio" id="IPSS3_6" value="5"><label for="IPSS3_6">5、總是</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>IPSS得分-4</strong>：
-            <input name="IPSS_score4" type="hidden" value="99">
-      			<input name="IPSS_score4" type="radio" id="IPSS4_1" value="0"><label for="IPSS4_1">0、完全沒有</label>&nbsp;
-      			<input name="IPSS_score4" type="radio" id="IPSS4_2" value="1"><label for="IPSS4_2">1、偶爾</label>&nbsp;
-      			<input name="IPSS_score4" type="radio" id="IPSS4_3" value="2"><label for="IPSS4_3">2、三不五時</label>&nbsp;
-      			<input name="IPSS_score4" type="radio" id="IPSS4_4" value="3"><label for="IPSS4_4">3、一半一半</label>&nbsp;
-      			<input name="IPSS_score4" type="radio" id="IPSS4_5" value="4"><label for="IPSS4_5">4、經常</label>&nbsp;
-      			<input name="IPSS_score4" type="radio" id="IPSS4_6" value="5"><label for="IPSS4_6">5、總是</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>IPSS得分-5</strong>：
-            <input name="IPSS_score5" type="hidden" value="99">
-      			<input name="IPSS_score5" type="radio" id="IPSS5_1" value="0"><label for="IPSS5_1">0、完全沒有</label>&nbsp;
-      			<input name="IPSS_score5" type="radio" id="IPSS5_2" value="1"><label for="IPSS5_2">1、偶爾</label>&nbsp;
-      			<input name="IPSS_score5" type="radio" id="IPSS5_3" value="2"><label for="IPSS5_3">2、三不五時</label>&nbsp;
-      			<input name="IPSS_score5" type="radio" id="IPSS5_4" value="3"><label for="IPSS5_4">3、一半一半</label>&nbsp;
-      			<input name="IPSS_score5" type="radio" id="IPSS5_5" value="4"><label for="IPSS5_5">4、經常</label>&nbsp;
-      			<input name="IPSS_score5" type="radio" id="IPSS5_6" value="5"><label for="IPSS5_6">5、總是</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>IPSS得分-6</strong>：
-            <input name="IPSS_score6" type="hidden" value="99">
-      			<input name="IPSS_score6" type="radio" id="IPSS6_1" value="0"><label for="IPSS6_1">0、完全沒有</label>&nbsp;
-      			<input name="IPSS_score6" type="radio" id="IPSS6_2" value="1"><label for="IPSS6_2">1、偶爾</label>&nbsp;
-      			<input name="IPSS_score6" type="radio" id="IPSS6_3" value="2"><label for="IPSS6_3">2、三不五時</label>&nbsp;
-      			<input name="IPSS_score6" type="radio" id="IPSS6_4" value="3"><label for="IPSS6_4">3、一半一半</label>&nbsp;
-      			<input name="IPSS_score6" type="radio" id="IPSS6_5" value="4"><label for="IPSS6_5">4、經常</label>&nbsp;
-      			<input name="IPSS_score6" type="radio" id="IPSS6_6" value="5"><label for="IPSS6_6">5、總是</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>IPSS得分-7</strong>：
-            <input name="IPSS_score7" type="hidden" value="99">
-      			<input name="IPSS_score7" type="radio" id="IPSS7_1" value="0"><label for="IPSS7_1">0、完全沒有</label>&nbsp;
-      			<input name="IPSS_score7" type="radio" id="IPSS7_2" value="1"><label for="IPSS7_2">1、一次</label>&nbsp;
-      			<input name="IPSS_score7" type="radio" id="IPSS7_3" value="2"><label for="IPSS7_3">2、二次</label>&nbsp;
-      			<input name="IPSS_score7" type="radio" id="IPSS7_4" value="3"><label for="IPSS7_4">3、三次</label>&nbsp;
-      			<input name="IPSS_score7" type="radio" id="IPSS7_5" value="4"><label for="IPSS7_5">4、四次</label>&nbsp;
-      			<input name="IPSS_score7" type="radio" id="IPSS7_6" value="5"><label for="IPSS7_6">5、五次或以上</label>
-      			<br>
-      		</p>
+      	<div class="ipss_info ipad">
+          <h2>下泌尿道症狀評分表（IPSS）<span class="ipad-qs">，請依據您自身狀況點選：</span></h2>
           <p>
-            <strong>因泌尿系統疾病的症狀而影響了生活的素質</strong>：<br>
+            <strong>
+              <span>IPSS得分-1：</span>
+              <span>1. 在過去一個月內，您是否有小便解不乾淨的感覺？</span>
+            </strong>
+            <input name="IPSS_score1" type="hidden" value="99">
+            <input name="IPSS_score1" type="radio" id="IPSS1_1" value="0"><label for="IPSS1_1">0、完全沒有</label>&nbsp;
+            <input name="IPSS_score1" type="radio" id="IPSS1_2" value="1"><label for="IPSS1_2">1、偶爾</label>&nbsp;
+            <input name="IPSS_score1" type="radio" id="IPSS1_3" value="2"><label for="IPSS1_3">2、三不五時</label>&nbsp;
+            <input name="IPSS_score1" type="radio" id="IPSS1_4" value="3"><label for="IPSS1_4">3、一半一半</label>&nbsp;
+            <input name="IPSS_score1" type="radio" id="IPSS1_5" value="4"><label for="IPSS1_5">4、經常</label>&nbsp;
+            <input name="IPSS_score1" type="radio" id="IPSS1_6" value="5"><label for="IPSS1_6">5、總是</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>IPSS得分-2：</span>
+              <span>2. 在過去一個月內，您是否不到兩小時就要再去小便一次？</span>
+            </strong>
+            <input name="IPSS_score2" type="hidden" value="99">
+            <input name="IPSS_score2" type="radio" id="IPSS2_1" value="0"><label for="IPSS2_1">0、完全沒有</label>&nbsp;
+            <input name="IPSS_score2" type="radio" id="IPSS2_2" value="1"><label for="IPSS2_2">1、偶爾</label>&nbsp;
+            <input name="IPSS_score2" type="radio" id="IPSS2_3" value="2"><label for="IPSS2_3">2、三不五時</label>&nbsp;
+            <input name="IPSS_score2" type="radio" id="IPSS2_4" value="3"><label for="IPSS2_4">3、一半一半</label>&nbsp;
+            <input name="IPSS_score2" type="radio" id="IPSS2_5" value="4"><label for="IPSS2_5">4、經常</label>&nbsp;
+            <input name="IPSS_score2" type="radio" id="IPSS2_6" value="5"><label for="IPSS2_6">5、總是</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>IPSS得分-3：</span>
+              <span>3. 在過去一個月內，您是否有小便斷斷續續的現象？</span>
+            </strong>
+            <input name="IPSS_score3" type="hidden" value="99">
+            <input name="IPSS_score3" type="radio" id="IPSS3_1" value="0"><label for="IPSS3_1">0、完全沒有</label>&nbsp;
+            <input name="IPSS_score3" type="radio" id="IPSS3_2" value="1"><label for="IPSS3_2">1、偶爾</label>&nbsp;
+            <input name="IPSS_score3" type="radio" id="IPSS3_3" value="2"><label for="IPSS3_3">2、三不五時</label>&nbsp;
+            <input name="IPSS_score3" type="radio" id="IPSS3_4" value="3"><label for="IPSS3_4">3、一半一半</label>&nbsp;
+            <input name="IPSS_score3" type="radio" id="IPSS3_5" value="4"><label for="IPSS3_5">4、經常</label>&nbsp;
+            <input name="IPSS_score3" type="radio" id="IPSS3_6" value="5"><label for="IPSS3_6">5、總是</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>IPSS得分-4：</span>
+              <span>4. 在過去一個月內，您是否有憋不住尿的感覺(尿急就憋不住)？</span>
+            </strong>
+            <input name="IPSS_score4" type="hidden" value="99">
+            <input name="IPSS_score4" type="radio" id="IPSS4_1" value="0"><label for="IPSS4_1">0、完全沒有</label>&nbsp;
+            <input name="IPSS_score4" type="radio" id="IPSS4_2" value="1"><label for="IPSS4_2">1、偶爾</label>&nbsp;
+            <input name="IPSS_score4" type="radio" id="IPSS4_3" value="2"><label for="IPSS4_3">2、三不五時</label>&nbsp;
+            <input name="IPSS_score4" type="radio" id="IPSS4_4" value="3"><label for="IPSS4_4">3、一半一半</label>&nbsp;
+            <input name="IPSS_score4" type="radio" id="IPSS4_5" value="4"><label for="IPSS4_5">4、經常</label>&nbsp;
+            <input name="IPSS_score4" type="radio" id="IPSS4_6" value="5"><label for="IPSS4_6">5、總是</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>IPSS得分-5：</span>
+              <span>5. 在過去一個月內，您是否有小便無力尿流變細的感覺？</span>
+            </strong>
+            <input name="IPSS_score5" type="hidden" value="99">
+            <input name="IPSS_score5" type="radio" id="IPSS5_1" value="0"><label for="IPSS5_1">0、完全沒有</label>&nbsp;
+            <input name="IPSS_score5" type="radio" id="IPSS5_2" value="1"><label for="IPSS5_2">1、偶爾</label>&nbsp;
+            <input name="IPSS_score5" type="radio" id="IPSS5_3" value="2"><label for="IPSS5_3">2、三不五時</label>&nbsp;
+            <input name="IPSS_score5" type="radio" id="IPSS5_4" value="3"><label for="IPSS5_4">3、一半一半</label>&nbsp;
+            <input name="IPSS_score5" type="radio" id="IPSS5_5" value="4"><label for="IPSS5_5">4、經常</label>&nbsp;
+            <input name="IPSS_score5" type="radio" id="IPSS5_6" value="5"><label for="IPSS5_6">5、總是</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>IPSS得分-6：</span>
+              <span>6. 在過一個月內，您是否有需要用力才能排解出小便？</span>
+            </strong>
+            <input name="IPSS_score6" type="hidden" value="99">
+            <input name="IPSS_score6" type="radio" id="IPSS6_1" value="0"><label for="IPSS6_1">0、完全沒有</label>&nbsp;
+            <input name="IPSS_score6" type="radio" id="IPSS6_2" value="1"><label for="IPSS6_2">1、偶爾</label>&nbsp;
+            <input name="IPSS_score6" type="radio" id="IPSS6_3" value="2"><label for="IPSS6_3">2、三不五時</label>&nbsp;
+            <input name="IPSS_score6" type="radio" id="IPSS6_4" value="3"><label for="IPSS6_4">3、一半一半</label>&nbsp;
+            <input name="IPSS_score6" type="radio" id="IPSS6_5" value="4"><label for="IPSS6_5">4、經常</label>&nbsp;
+            <input name="IPSS_score6" type="radio" id="IPSS6_6" value="5"><label for="IPSS6_6">5、總是</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>IPSS得分-7：</span>
+              <span>7. 在過去一個月內，晚上睡覺到早上睡醒您一般需要起床小便幾次？</span>
+            </strong>
+            <input name="IPSS_score7" type="hidden" value="99">
+            <input name="IPSS_score7" type="radio" id="IPSS7_1" value="0"><label for="IPSS7_1">0、完全沒有</label>&nbsp;
+            <input name="IPSS_score7" type="radio" id="IPSS7_2" value="1"><label for="IPSS7_2">1、一次</label>&nbsp;
+            <input name="IPSS_score7" type="radio" id="IPSS7_3" value="2"><label for="IPSS7_3">2、二次</label>&nbsp;
+            <input name="IPSS_score7" type="radio" id="IPSS7_4" value="3"><label for="IPSS7_4">3、三次</label>&nbsp;
+            <input name="IPSS_score7" type="radio" id="IPSS7_5" value="4"><label for="IPSS7_5">4、四次</label>&nbsp;
+            <input name="IPSS_score7" type="radio" id="IPSS7_6" value="5"><label for="IPSS7_6">5、五次或以上</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>因泌尿系統疾病的症狀而影響了生活的素質</span>
+              <span>如果您以後的小便情形都和現在一樣，您會覺得如何？</span>
+            </strong>
             <input name="urinary_quality_life" type="hidden" value="99">
             <input name="urinary_quality_life" type="radio" id="uql1" value="0"><label for="uql1">0、非常滿意</label>&nbsp;
             <input name="urinary_quality_life" type="radio" id="uql2" value="1"><label for="uql2">1、滿意</label>&nbsp;
@@ -675,435 +697,552 @@
             <input name="urinary_quality_life" type="radio" id="uql7" value="6"><label for="uql7">6、非常不滿意</label>
             <br>
           </p>
-      	</div>
-      	<div class="ic_symptom_info">
-      		<h2>間質性膀胱炎症狀指標</h2>
-      		<p>
-      			<strong>間質性膀胱炎症狀指標-1</strong>：
+        </div>
+      	<div class="ic_symptom_info ipad">
+          <h2>間質性膀胱炎症狀指標<span class="ipad-qs">，請依據您自身狀況點選：</span></h2>
+          <p>
+            <strong>
+              <span>間質性膀胱炎症狀指標-1：</span>
+              <span>1. 會有無預警而強烈想解尿的感覺，一個月佔多少百分比？</span>
+            </strong>
             <input name="IC_symptom1" type="hidden" value="99">
-      			<input name="IC_symptom1" type="radio" id="ICS1_1" value="0"><label for="ICS1_1">0、完全沒有</label>&nbsp;
-      			<input name="IC_symptom1" type="radio" id="ICS1_2" value="1"><label for="ICS1_2">1、不到20%</label>&nbsp;
-      			<input name="IC_symptom1" type="radio" id="ICS1_3" value="2"><label for="ICS1_3">2、不到50%</label>&nbsp;
-      			<input name="IC_symptom1" type="radio" id="ICS1_4" value="3"><label for="ICS1_4">3、將近50%</label>&nbsp;
-      			<input name="IC_symptom1" type="radio" id="ICS1_5" value="4"><label for="ICS1_5">4、超過50%</label>&nbsp;
-      			<input name="IC_symptom1" type="radio" id="ICS1_6" value="5"><label for="ICS1_6">5、幾乎每次</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>間質性膀胱炎症狀指標-2</strong>：
+            <input name="IC_symptom1" type="radio" id="ICS1_1" value="0"><label for="ICS1_1">0、完全沒有</label>&nbsp;
+            <input name="IC_symptom1" type="radio" id="ICS1_2" value="1"><label for="ICS1_2">1、不到20%</label>&nbsp;
+            <input name="IC_symptom1" type="radio" id="ICS1_3" value="2"><label for="ICS1_3">2、不到50%</label>&nbsp;
+            <input name="IC_symptom1" type="radio" id="ICS1_4" value="3"><label for="ICS1_4">3、將近50%</label>&nbsp;
+            <input name="IC_symptom1" type="radio" id="ICS1_5" value="4"><label for="ICS1_5">4、超過50%</label>&nbsp;
+            <input name="IC_symptom1" type="radio" id="ICS1_6" value="5"><label for="ICS1_6">5、幾乎每次</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>間質性膀胱炎症狀指標-2：</span>
+              <span>2. 解尿後是否在不到 2 小時內無法忍受而必須再解尿的次數？</span>
+            </strong>
             <input name="IC_symptom2" type="hidden" value="99">
-      			<input name="IC_symptom2" type="radio" id="ICS2_1" value="0"><label for="ICS2_1">0、完全沒有</label>&nbsp;
-      			<input name="IC_symptom2" type="radio" id="ICS2_2" value="1"><label for="ICS2_2">1、很少有</label>&nbsp;
-      			<input name="IC_symptom2" type="radio" id="ICS2_3" value="2"><label for="ICS2_3">2、不到一半次數</label>&nbsp;
-      			<input name="IC_symptom2" type="radio" id="ICS2_4" value="3"><label for="ICS2_4">3、接近一半次數</label>&nbsp;
-      			<input name="IC_symptom2" type="radio" id="ICS2_5" value="4"><label for="ICS2_5">4、超過一半次數</label>&nbsp;
-      			<input name="IC_symptom2" type="radio" id="ICS2_6" value="5"><label for="ICS2_6">5、幾乎每次</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>間質性膀胱炎症狀指標-3</strong>：
+            <input name="IC_symptom2" type="radio" id="ICS2_1" value="0"><label for="ICS2_1">0、完全沒有</label>&nbsp;
+            <input name="IC_symptom2" type="radio" id="ICS2_2" value="1"><label for="ICS2_2">1、很少有</label>&nbsp;
+            <input name="IC_symptom2" type="radio" id="ICS2_3" value="2"><label for="ICS2_3">2、不到一半次數</label>&nbsp;
+            <input name="IC_symptom2" type="radio" id="ICS2_4" value="3"><label for="ICS2_4">3、接近一半次數</label>&nbsp;
+            <input name="IC_symptom2" type="radio" id="ICS2_5" value="4"><label for="ICS2_5">4、超過一半次數</label>&nbsp;
+            <input name="IC_symptom2" type="radio" id="ICS2_6" value="5"><label for="ICS2_6">5、幾乎每次</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>間質性膀胱炎症狀指標-3：</span>
+              <span>3. 平均每天在夜間起床解尿的次數？</span>
+            </strong>
             <input name="IC_symptom3" type="hidden" value="99">
-      			<input name="IC_symptom3" type="radio" id="ICS3_1" value="0"><label for="ICS3_1">0、完全沒有</label>&nbsp;
-      			<input name="IC_symptom3" type="radio" id="ICS3_2" value="1"><label for="ICS3_2">1、一次</label>&nbsp;
-      			<input name="IC_symptom3" type="radio" id="ICS3_3" value="2"><label for="ICS3_3">2、二次</label>&nbsp;
-      			<input name="IC_symptom3" type="radio" id="ICS3_4" value="3"><label for="ICS3_4">3、三次</label>&nbsp;
-      			<input name="IC_symptom3" type="radio" id="ICS3_5" value="4"><label for="ICS3_5">4、四次</label>&nbsp;
-      			<input name="IC_symptom3" type="radio" id="ICS3_6" value="5"><label for="ICS3_6">5、五次含以上</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>間質性膀胱炎症狀指標-4</strong>：
+            <input name="IC_symptom3" type="radio" id="ICS3_1" value="0"><label for="ICS3_1">0、完全沒有</label>&nbsp;
+            <input name="IC_symptom3" type="radio" id="ICS3_2" value="1"><label for="ICS3_2">1、一次</label>&nbsp;
+            <input name="IC_symptom3" type="radio" id="ICS3_3" value="2"><label for="ICS3_3">2、二次</label>&nbsp;
+            <input name="IC_symptom3" type="radio" id="ICS3_4" value="3"><label for="ICS3_4">3、三次</label>&nbsp;
+            <input name="IC_symptom3" type="radio" id="ICS3_5" value="4"><label for="ICS3_5">4、四次</label>&nbsp;
+            <input name="IC_symptom3" type="radio" id="ICS3_6" value="5"><label for="ICS3_6">5、五次含以上</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>間質性膀胱炎症狀指標-4：</span>
+              <span>4. 是否有膀胱疼痛或下腹痛或灼熱的情形？</span>
+            </strong>
             <input name="IC_symptom4" type="hidden" value="99">
-      			<input name="IC_symptom4" type="radio" id="ICS4_1" value="0"><label for="ICS4_1">0、完全沒有</label>&nbsp;
-      			<input name="IC_symptom4" type="radio" id="ICS4_2" value="1"><label for="ICS4_2">1、很少有</label>&nbsp;
-      			<input name="IC_symptom4" type="radio" id="ICS4_3" value="2"><label for="ICS4_3">2、不到一半時間</label>&nbsp;
-      			<input name="IC_symptom4" type="radio" id="ICS4_4" value="3"><label for="ICS4_4">3、半數時間</label>&nbsp;
-      			<input name="IC_symptom4" type="radio" id="ICS4_5" value="4"><label for="ICS4_5">4、超過半數時間</label>&nbsp;
-      			<input name="IC_symptom4" type="radio" id="ICS4_6" value="5"><label for="ICS4_6">5、總是如此</label>
-      			<br>
-      		</p>
-      	</div>
-      	<div class="ic_question_info">
-      		<h2>間質性膀胱炎問題指標</h2>
-      		<p>
-      			<strong>間質性膀胱炎問題指標-1</strong>：
+            <input name="IC_symptom4" type="radio" id="ICS4_1" value="0"><label for="ICS4_1">0、完全沒有</label>&nbsp;
+            <input name="IC_symptom4" type="radio" id="ICS4_2" value="1"><label for="ICS4_2">1、很少有</label>&nbsp;
+            <input name="IC_symptom4" type="radio" id="ICS4_3" value="2"><label for="ICS4_3">2、不到一半時間</label>&nbsp;
+            <input name="IC_symptom4" type="radio" id="ICS4_4" value="3"><label for="ICS4_4">3、半數時間</label>&nbsp;
+            <input name="IC_symptom4" type="radio" id="ICS4_5" value="4"><label for="ICS4_5">4、超過半數時間</label>&nbsp;
+            <input name="IC_symptom4" type="radio" id="ICS4_6" value="5"><label for="ICS4_6">5、總是如此</label>
+            <br>
+          </p>
+        </div>
+        <div class="ic_question_info ipad">
+          <h2>間質性膀胱炎問題指標<span class="ipad-qs">，請依據您自身狀況點選：</span></h2>
+          <p>
+            <strong>
+              <span>間質性膀胱炎問題指標-1：</span>
+              <span>1. 用藥期間，<u>日間頻尿</u>對您是否造成很大的困擾？</span>
+            </strong>
             <input name="IC_question1" type="hidden" value="99">
-      			<input name="IC_question1" type="radio" id="ICQ1_1" value="0"><label for="ICQ1_1">0、沒有困擾</label>&nbsp;
-      			<input name="IC_question1" type="radio" id="ICQ1_2" value="1"><label for="ICQ1_2">1、極小困擾</label>&nbsp;
-      			<input name="IC_question1" type="radio" id="ICQ1_3" value="2"><label for="ICQ1_3">2、小困擾</label>&nbsp;
-      			<input name="IC_question1" type="radio" id="ICQ1_4" value="3"><label for="ICQ1_4">3、中等困擾</label>&nbsp;
-      			<input name="IC_question1" type="radio" id="ICQ1_5" value="4"><label for="ICQ1_5">4、大困擾</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>間質性膀胱炎問題指標-2</strong>：
+            <input name="IC_question1" type="radio" id="ICQ1_1" value="0"><label for="ICQ1_1">0、沒有困擾</label>&nbsp;
+            <input name="IC_question1" type="radio" id="ICQ1_2" value="1"><label for="ICQ1_2">1、極小困擾</label>&nbsp;
+            <input name="IC_question1" type="radio" id="ICQ1_3" value="2"><label for="ICQ1_3">2、小困擾</label>&nbsp;
+            <input name="IC_question1" type="radio" id="ICQ1_4" value="3"><label for="ICQ1_4">3、中等困擾</label>&nbsp;
+            <input name="IC_question1" type="radio" id="ICQ1_5" value="4"><label for="ICQ1_5">4、大困擾</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>間質性膀胱炎問題指標-2：</span>
+              <span>2. 用藥期間，<u>夜間起床解尿</u>對您是否造成很大的困擾？</span>
+            </strong>
             <input name="IC_question2" type="hidden" value="99">
-      			<input name="IC_question2" type="radio" id="ICQ2_1" value="0"><label for="ICQ2_1">0、沒有困擾</label>&nbsp;
-      			<input name="IC_question2" type="radio" id="ICQ2_2" value="1"><label for="ICQ2_2">1、極小困擾</label>&nbsp;
-      			<input name="IC_question2" type="radio" id="ICQ2_3" value="2"><label for="ICQ2_3">2、小困擾</label>&nbsp;
-      			<input name="IC_question2" type="radio" id="ICQ2_4" value="3"><label for="ICQ2_4">3、中等困擾</label>&nbsp;
-      			<input name="IC_question2" type="radio" id="ICQ2_5" value="4"><label for="ICQ2_5">4、大困擾</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>間質性膀胱炎問題指標-3</strong>：
+            <input name="IC_question2" type="radio" id="ICQ2_1" value="0"><label for="ICQ2_1">0、沒有困擾</label>&nbsp;
+            <input name="IC_question2" type="radio" id="ICQ2_2" value="1"><label for="ICQ2_2">1、極小困擾</label>&nbsp;
+            <input name="IC_question2" type="radio" id="ICQ2_3" value="2"><label for="ICQ2_3">2、小困擾</label>&nbsp;
+            <input name="IC_question2" type="radio" id="ICQ2_4" value="3"><label for="ICQ2_4">3、中等困擾</label>&nbsp;
+            <input name="IC_question2" type="radio" id="ICQ2_5" value="4"><label for="ICQ2_5">4、大困擾</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>間質性膀胱炎問題指標-3：</span>
+              <span>3. 用藥期間，<u>無預警解尿</u>對您是否造成很大的困擾？</span>
+            </strong>
             <input name="IC_question3" type="hidden" value="99">
-      			<input name="IC_question3" type="radio" id="ICQ3_1" value="0"><label for="ICQ3_1">0、沒有困擾</label>&nbsp;
-      			<input name="IC_question3" type="radio" id="ICQ3_2" value="1"><label for="ICQ3_2">1、極小困擾</label>&nbsp;
-      			<input name="IC_question3" type="radio" id="ICQ3_3" value="2"><label for="ICQ3_3">2、小困擾</label>&nbsp;
-      			<input name="IC_question3" type="radio" id="ICQ3_4" value="3"><label for="ICQ3_4">3、中等困擾</label>&nbsp;
-      			<input name="IC_question3" type="radio" id="ICQ3_5" value="4"><label for="ICQ3_5">4、大困擾</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>間質性膀胱炎問題指標-4</strong>：
+            <input name="IC_question3" type="radio" id="ICQ3_1" value="0"><label for="ICQ3_1">0、沒有困擾</label>&nbsp;
+            <input name="IC_question3" type="radio" id="ICQ3_2" value="1"><label for="ICQ3_2">1、極小困擾</label>&nbsp;
+            <input name="IC_question3" type="radio" id="ICQ3_3" value="2"><label for="ICQ3_3">2、小困擾</label>&nbsp;
+            <input name="IC_question3" type="radio" id="ICQ3_4" value="3"><label for="ICQ3_4">3、中等困擾</label>&nbsp;
+            <input name="IC_question3" type="radio" id="ICQ3_5" value="4"><label for="ICQ3_5">4、大困擾</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>間質性膀胱炎問題指標-4：</span>
+              <span>4. 用藥期間，<u>膀胱疼痛</u>、<u>灼熱</u>、<u>不舒服或壓迫</u>對您造成的困擾有多大？</span>
+            </strong>
             <input name="IC_question4" type="hidden" value="99">
-      			<input name="IC_question4" type="radio" id="ICQ4_1" value="0"><label for="ICQ4_1">0、沒有困擾</label>&nbsp;
-      			<input name="IC_question4" type="radio" id="ICQ4_2" value="1"><label for="ICQ4_2">1、極小困擾</label>&nbsp;
-      			<input name="IC_question4" type="radio" id="ICQ4_3" value="2"><label for="ICQ4_3">2、小困擾</label>&nbsp;
-      			<input name="IC_question4" type="radio" id="ICQ4_4" value="3"><label for="ICQ4_4">3、中等困擾</label>&nbsp;
-      			<input name="IC_question4" type="radio" id="ICQ4_5" value="4"><label for="ICQ4_5">4、大困擾</label>
-      			<br>
-      		</p>
-      	</div>
-      	<div class="vas_info">
-      		<h2>膀胱疼痛指數</h2>
-      		<p>
-      			<strong>疼痛指數</strong>：
+            <input name="IC_question4" type="radio" id="ICQ4_1" value="0"><label for="ICQ4_1">0、沒有困擾</label>&nbsp;
+            <input name="IC_question4" type="radio" id="ICQ4_2" value="1"><label for="ICQ4_2">1、極小困擾</label>&nbsp;
+            <input name="IC_question4" type="radio" id="ICQ4_3" value="2"><label for="ICQ4_3">2、小困擾</label>&nbsp;
+            <input name="IC_question4" type="radio" id="ICQ4_4" value="3"><label for="ICQ4_4">3、中等困擾</label>&nbsp;
+            <input name="IC_question4" type="radio" id="ICQ4_5" value="4"><label for="ICQ4_5">4、大困擾</label>
+            <br>
+          </p>
+        </div>
+        <div class="vas_info ipad">
+          <h2>膀胱疼痛指數</h2>
+          <p>
+            <strong>
+              <span>疼痛指數：</span>
+              <span class="pain-index">
+                請依照下圖形容一下您膀胱或下腹疼痛的程度：
+                <img src="images/pain_index.jpg" width="100%" />
+              </span>
+            </strong>
             <input name="VAS" type="hidden" value="99">
-      			<input name="VAS" type="radio" id="vas1" value="0"><label for="vas1">0</label>&nbsp;
-      			<input name="VAS" type="radio" id="vas2" value="1"><label for="vas2">1</label>&nbsp;
-      			<input name="VAS" type="radio" id="vas3" value="2"><label for="vas3">2</label>&nbsp;
-      			<input name="VAS" type="radio" id="vas4" value="3"><label for="vas4">3</label>&nbsp;
-      			<input name="VAS" type="radio" id="vas5" value="4"><label for="vas5">4</label>&nbsp;
-      			<input name="VAS" type="radio" id="vas6" value="5"><label for="vas6">5</label>&nbsp;
-      			<input name="VAS" type="radio" id="vas7" value="6"><label for="vas7">6</label>&nbsp;
-      			<input name="VAS" type="radio" id="vas8" value="7"><label for="vas8">7</label>&nbsp;
-      			<input name="VAS" type="radio" id="vas9" value="8"><label for="vas9">8</label>&nbsp;
-      			<input name="VAS" type="radio" id="vas10" value="9"><label for="vas10">9</label>&nbsp;
-      			<input name="VAS" type="radio" id="vas11" value="10"><label for="vas11">10</label>
-      			<br>
-      		</p>
-      	</div>
-      	<div class="bsrs_info">
-      		<h2>簡式健康表（BSRS）</h2>
-      		<p>
-      			<strong>BSRS-1</strong>：
+            <input name="VAS" type="radio" id="vas1" value="0"><label for="vas1">0</label>&nbsp;
+            <input name="VAS" type="radio" id="vas2" value="1"><label for="vas2">1</label>&nbsp;
+            <input name="VAS" type="radio" id="vas3" value="2"><label for="vas3">2</label>&nbsp;
+            <input name="VAS" type="radio" id="vas4" value="3"><label for="vas4">3</label>&nbsp;
+            <input name="VAS" type="radio" id="vas5" value="4"><label for="vas5">4</label>&nbsp;
+            <input name="VAS" type="radio" id="vas6" value="5"><label for="vas6">5</label>&nbsp;
+            <input name="VAS" type="radio" id="vas7" value="6"><label for="vas7">6</label>&nbsp;
+            <input name="VAS" type="radio" id="vas8" value="7"><label for="vas8">7</label>&nbsp;
+            <input name="VAS" type="radio" id="vas9" value="8"><label for="vas9">8</label>&nbsp;
+            <input name="VAS" type="radio" id="vas10" value="9"><label for="vas10">9</label>&nbsp;
+            <input name="VAS" type="radio" id="vas11" value="10"><label for="vas11">10</label>
+            <br>
+          </p>
+        </div>
+        <div class="bsrs_info ipad">
+          <h2>簡式健康表（BSRS）<span class="ipad-qs">：最近一週感到困擾或苦惱的程度，請依據您自身狀況點選。</span></h2>
+          <p>
+            <strong>
+              <span>BSRS-1：</span>
+              <span>1. 睡眠困難，譬如難以入睡，易醒或早醒</span>
+            </strong>
             <input name="BSRS1" type="hidden" value="99">
-      			<input name="BSRS1" type="radio" id="bsrs1_1" value="0"><label for="bsrs1_1">0、完全沒有</label>&nbsp;
-      			<input name="BSRS1" type="radio" id="bsrs1_2" value="1"><label for="bsrs1_2">1、輕微</label>&nbsp;
-      			<input name="BSRS1" type="radio" id="bsrs1_3" value="2"><label for="bsrs1_3">2、中等程度</label>&nbsp;
-      			<input name="BSRS1" type="radio" id="bsrs1_4" value="3"><label for="bsrs1_4">3、厲害</label>&nbsp;
-      			<input name="BSRS1" type="radio" id="bsrs1_5" value="4"><label for="bsrs1_5">4、非常厲害</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>BSRS-2</strong>：
+            <input name="BSRS1" type="radio" id="bsrs1_1" value="0"><label for="bsrs1_1">0、完全沒有</label>&nbsp;
+            <input name="BSRS1" type="radio" id="bsrs1_2" value="1"><label for="bsrs1_2">1、輕微</label>&nbsp;
+            <input name="BSRS1" type="radio" id="bsrs1_3" value="2"><label for="bsrs1_3">2、中等程度</label>&nbsp;
+            <input name="BSRS1" type="radio" id="bsrs1_4" value="3"><label for="bsrs1_4">3、厲害</label>&nbsp;
+            <input name="BSRS1" type="radio" id="bsrs1_5" value="4"><label for="bsrs1_5">4、非常厲害</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>BSRS-2：</span>
+              <span>2. 感覺緊張不安</span>
+            </strong>
             <input name="BSRS2" type="hidden" value="99">
-      			<input name="BSRS2" type="radio" id="bsrs2_1" value="0"><label for="bsrs2_1">0、完全沒有</label>&nbsp;
-      			<input name="BSRS2" type="radio" id="bsrs2_2" value="1"><label for="bsrs2_2">1、輕微</label>&nbsp;
-      			<input name="BSRS2" type="radio" id="bsrs2_3" value="2"><label for="bsrs2_3">2、中等程度</label>&nbsp;
-      			<input name="BSRS2" type="radio" id="bsrs2_4" value="3"><label for="bsrs2_4">3、厲害</label>&nbsp;
-      			<input name="BSRS2" type="radio" id="bsrs2_5" value="4"><label for="bsrs2_5">4、非常厲害</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>BSRS-3</strong>：
+            <input name="BSRS2" type="radio" id="bsrs2_1" value="0"><label for="bsrs2_1">0、完全沒有</label>&nbsp;
+            <input name="BSRS2" type="radio" id="bsrs2_2" value="1"><label for="bsrs2_2">1、輕微</label>&nbsp;
+            <input name="BSRS2" type="radio" id="bsrs2_3" value="2"><label for="bsrs2_3">2、中等程度</label>&nbsp;
+            <input name="BSRS2" type="radio" id="bsrs2_4" value="3"><label for="bsrs2_4">3、厲害</label>&nbsp;
+            <input name="BSRS2" type="radio" id="bsrs2_5" value="4"><label for="bsrs2_5">4、非常厲害</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>BSRS-3：</span>
+              <span>3. 覺得容易苦惱或動怒</span>
+            </strong>
             <input name="BSRS3" type="hidden" value="99">
-      			<input name="BSRS3" type="radio" id="bsrs3_1" value="0"><label for="bsrs3_1">0、完全沒有</label>&nbsp;
-      			<input name="BSRS3" type="radio" id="bsrs3_2" value="1"><label for="bsrs3_2">1、輕微</label>&nbsp;
-      			<input name="BSRS3" type="radio" id="bsrs3_3" value="2"><label for="bsrs3_3">2、中等程度</label>&nbsp;
-      			<input name="BSRS3" type="radio" id="bsrs3_4" value="3"><label for="bsrs3_4">3、厲害</label>&nbsp;
-      			<input name="BSRS3" type="radio" id="bsrs3_5" value="4"><label for="bsrs3_5">4、非常厲害</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>BSRS-4</strong>：
+            <input name="BSRS3" type="radio" id="bsrs3_1" value="0"><label for="bsrs3_1">0、完全沒有</label>&nbsp;
+            <input name="BSRS3" type="radio" id="bsrs3_2" value="1"><label for="bsrs3_2">1、輕微</label>&nbsp;
+            <input name="BSRS3" type="radio" id="bsrs3_3" value="2"><label for="bsrs3_3">2、中等程度</label>&nbsp;
+            <input name="BSRS3" type="radio" id="bsrs3_4" value="3"><label for="bsrs3_4">3、厲害</label>&nbsp;
+            <input name="BSRS3" type="radio" id="bsrs3_5" value="4"><label for="bsrs3_5">4、非常厲害</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>BSRS-4：</span>
+              <span>4. 感覺憂鬱，心情低落</span>
+            </strong>
             <input name="BSRS4" type="hidden" value="99">
-      			<input name="BSRS4" type="radio" id="bsrs4_1" value="0"><label for="bsrs4_1">0、完全沒有</label>&nbsp;
-      			<input name="BSRS4" type="radio" id="bsrs4_2" value="1"><label for="bsrs4_2">1、輕微</label>&nbsp;
-      			<input name="BSRS4" type="radio" id="bsrs4_3" value="2"><label for="bsrs4_3">2、中等程度</label>&nbsp;
-      			<input name="BSRS4" type="radio" id="bsrs4_4" value="3"><label for="bsrs4_4">3、厲害</label>&nbsp;
-      			<input name="BSRS4" type="radio" id="bsrs4_5" value="4"><label for="bsrs4_5">4、非常厲害</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>BSRS-5</strong>：
+            <input name="BSRS4" type="radio" id="bsrs4_1" value="0"><label for="bsrs4_1">0、完全沒有</label>&nbsp;
+            <input name="BSRS4" type="radio" id="bsrs4_2" value="1"><label for="bsrs4_2">1、輕微</label>&nbsp;
+            <input name="BSRS4" type="radio" id="bsrs4_3" value="2"><label for="bsrs4_3">2、中等程度</label>&nbsp;
+            <input name="BSRS4" type="radio" id="bsrs4_4" value="3"><label for="bsrs4_4">3、厲害</label>&nbsp;
+            <input name="BSRS4" type="radio" id="bsrs4_5" value="4"><label for="bsrs4_5">4、非常厲害</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>BSRS-5：</span>
+              <span>5. 覺得比不上別人</span>
+            </strong>
             <input name="BSRS5" type="hidden" value="99">
-      			<input name="BSRS5" type="radio" id="bsrs5_1" value="0"><label for="bsrs5_1">0、完全沒有</label>&nbsp;
-      			<input name="BSRS5" type="radio" id="bsrs5_2" value="1"><label for="bsrs5_2">1、輕微</label>&nbsp;
-      			<input name="BSRS5" type="radio" id="bsrs5_3" value="2"><label for="bsrs5_3">2、中等程度</label>&nbsp;
-      			<input name="BSRS5" type="radio" id="bsrs5_4" value="3"><label for="bsrs5_4">3、厲害</label>&nbsp;
-      			<input name="BSRS5" type="radio" id="bsrs5_5" value="4"><label for="bsrs5_5">4、非常厲害</label>
-      			<br>
-      		</p>
-      	</div>
-      	<div class="fsfi_info">
-      		<h2>國際女性性功能指標（FSFI）調查</h2>
-      		<p>
-      			<strong>FSFI-1</strong>：
+            <input name="BSRS5" type="radio" id="bsrs5_1" value="0"><label for="bsrs5_1">0、完全沒有</label>&nbsp;
+            <input name="BSRS5" type="radio" id="bsrs5_2" value="1"><label for="bsrs5_2">1、輕微</label>&nbsp;
+            <input name="BSRS5" type="radio" id="bsrs5_3" value="2"><label for="bsrs5_3">2、中等程度</label>&nbsp;
+            <input name="BSRS5" type="radio" id="bsrs5_4" value="3"><label for="bsrs5_4">3、厲害</label>&nbsp;
+            <input name="BSRS5" type="radio" id="bsrs5_5" value="4"><label for="bsrs5_5">4、非常厲害</label>
+            <br>
+          </p>
+        </div>
+        <div class="fsfi_info ipad">
+          <h2>國際女性性功能指標（FSFI）調查<span class="ipad-qs">：請依據您<span class="double-underline">過去四週</span>的自身狀況圈選。</span></h2>
+          <p>
+            <strong>
+              <span>FSFI-1：</span>
+              <span>1. 您有性欲望或對與性相關的事務產生興趣的頻率是多少？</span>
+            </strong>
             <input name="FSFI1" type="hidden" value="99">
-      			<input name="FSFI1" type="radio" id="fsfi1_1" value="1"><label for="fsfi1_1">1、沒有或幾乎沒有</label>&nbsp;
-      			<input name="FSFI1" type="radio" id="fsfi1_2" value="2"><label for="fsfi1_2">2、偶而</label>&nbsp;
-      			<input name="FSFI1" type="radio" id="fsfi1_3" value="3"><label for="fsfi1_3">3、有時候</label>&nbsp;
-      			<input name="FSFI1" type="radio" id="fsfi1_4" value="4"><label for="fsfi1_4">4、經常</label>&nbsp;
-      			<input name="FSFI1" type="radio" id="fsfi1_5" value="5"><label for="fsfi1_5">5、總是或幾乎總是</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>FSFI-2</strong>：
+            <input name="FSFI1" type="radio" id="fsfi1_1" value="1"><label for="fsfi1_1">1、沒有或幾乎沒有</label>&nbsp;
+            <input name="FSFI1" type="radio" id="fsfi1_2" value="2"><label for="fsfi1_2">2、偶而</label>&nbsp;
+            <input name="FSFI1" type="radio" id="fsfi1_3" value="3"><label for="fsfi1_3">3、有時候</label>&nbsp;
+            <input name="FSFI1" type="radio" id="fsfi1_4" value="4"><label for="fsfi1_4">4、經常</label>&nbsp;
+            <input name="FSFI1" type="radio" id="fsfi1_5" value="5"><label for="fsfi1_5">5、總是或幾乎總是</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>FSFI-2：</span>
+              <span>2. 您有性欲望的程度是？</span>
+            </strong>
             <input name="FSFI2" type="hidden" value="99">
-      			<input name="FSFI2" type="radio" id="fsfi2_1" value="1"><label for="fsfi2_1">1、很低或完全沒有</label>&nbsp;
-      			<input name="FSFI2" type="radio" id="fsfi2_2" value="2"><label for="fsfi2_2">2、低</label>&nbsp;
-      			<input name="FSFI2" type="radio" id="fsfi2_3" value="3"><label for="fsfi2_3">3、普通</label>&nbsp;
-      			<input name="FSFI2" type="radio" id="fsfi2_4" value="4"><label for="fsfi2_4">4、高</label>&nbsp;
-      			<input name="FSFI2" type="radio" id="fsfi2_5" value="5"><label for="fsfi2_5">5、很高</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>FSFI-3</strong>：
+            <input name="FSFI2" type="radio" id="fsfi2_1" value="1"><label for="fsfi2_1">1、很低或完全沒有</label>&nbsp;
+            <input name="FSFI2" type="radio" id="fsfi2_2" value="2"><label for="fsfi2_2">2、低</label>&nbsp;
+            <input name="FSFI2" type="radio" id="fsfi2_3" value="3"><label for="fsfi2_3">3、普通</label>&nbsp;
+            <input name="FSFI2" type="radio" id="fsfi2_4" value="4"><label for="fsfi2_4">4、高</label>&nbsp;
+            <input name="FSFI2" type="radio" id="fsfi2_5" value="5"><label for="fsfi2_5">5、很高</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>FSFI-3：</span>
+              <span>3. 您在性活動中或性交中被激起性渴望的比率是多少？</span>
+            </strong>
             <input name="FSFI3" type="hidden" value="99">
-      			<input name="FSFI3" type="radio" id="fsfi3_1" value="0"><label for="fsfi3_1">0、無性活動</label>&nbsp;
-      			<input name="FSFI3" type="radio" id="fsfi3_2" value="1"><label for="fsfi3_2">1、沒有或幾乎沒有</label>&nbsp;
-      			<input name="FSFI3" type="radio" id="fsfi3_3" value="2"><label for="fsfi3_3">2、偶而</label>&nbsp;
-      			<input name="FSFI3" type="radio" id="fsfi3_4" value="3"><label for="fsfi3_4">3、有時候</label>&nbsp;
-      			<input name="FSFI3" type="radio" id="fsfi3_5" value="4"><label for="fsfi3_5">4、經常</label>&nbsp;
-      			<input name="FSFI3" type="radio" id="fsfi3_6" value="5"><label for="fsfi3_6">5、總是或經常總是</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>FSFI-4</strong>：
+            <input name="FSFI3" type="radio" id="fsfi3_1" value="0"><label for="fsfi3_1">0、無性活動</label>&nbsp;
+            <input name="FSFI3" type="radio" id="fsfi3_2" value="1"><label for="fsfi3_2">1、沒有或幾乎沒有</label>&nbsp;
+            <input name="FSFI3" type="radio" id="fsfi3_3" value="2"><label for="fsfi3_3">2、偶而</label>&nbsp;
+            <input name="FSFI3" type="radio" id="fsfi3_4" value="3"><label for="fsfi3_4">3、有時候</label>&nbsp;
+            <input name="FSFI3" type="radio" id="fsfi3_5" value="4"><label for="fsfi3_5">4、經常</label>&nbsp;
+            <input name="FSFI3" type="radio" id="fsfi3_6" value="5"><label for="fsfi3_6">5、總是或經常總是</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>FSFI-4：</span>
+              <span>4. 您在性活動中或性交中被激起性渴望的程度是？</span>
+            </strong>
             <input name="FSFI4" type="hidden" value="99">
-      			<input name="FSFI4" type="radio" id="fsfi4_1" value="0"><label for="fsfi4_1">0、無性活動</label>&nbsp;
-      			<input name="FSFI4" type="radio" id="fsfi4_2" value="1"><label for="fsfi4_2">1、很低或完全沒有</label>&nbsp;
-      			<input name="FSFI4" type="radio" id="fsfi4_3" value="2"><label for="fsfi4_3">2、低</label>&nbsp;
-      			<input name="FSFI4" type="radio" id="fsfi4_4" value="3"><label for="fsfi4_4">3、普通</label>&nbsp;
-      			<input name="FSFI4" type="radio" id="fsfi4_5" value="4"><label for="fsfi4_5">4、高</label>&nbsp;
-      			<input name="FSFI4" type="radio" id="fsfi4_6" value="5"><label for="fsfi4_6">5、很高</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>FSFI-5</strong>：
+            <input name="FSFI4" type="radio" id="fsfi4_1" value="0"><label for="fsfi4_1">0、無性活動</label>&nbsp;
+            <input name="FSFI4" type="radio" id="fsfi4_2" value="1"><label for="fsfi4_2">1、很低或完全沒有</label>&nbsp;
+            <input name="FSFI4" type="radio" id="fsfi4_3" value="2"><label for="fsfi4_3">2、低</label>&nbsp;
+            <input name="FSFI4" type="radio" id="fsfi4_4" value="3"><label for="fsfi4_4">3、普通</label>&nbsp;
+            <input name="FSFI4" type="radio" id="fsfi4_5" value="4"><label for="fsfi4_5">4、高</label>&nbsp;
+            <input name="FSFI4" type="radio" id="fsfi4_6" value="5"><label for="fsfi4_6">5、很高</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>FSFI-5：</span>
+              <span>5. 您在性活動中或性交中興奮起來的信心是？</span>
+            </strong>
             <input name="FSFI5" type="hidden" value="99">
-      			<input name="FSFI5" type="radio" id="fsfi5_1" value="0"><label for="fsfi5_1">0、無性活動</label>&nbsp;
-      			<input name="FSFI5" type="radio" id="fsfi5_2" value="1"><label for="fsfi5_2">1、沒有或幾乎沒有</label>&nbsp;
-      			<input name="FSFI5" type="radio" id="fsfi5_3" value="2"><label for="fsfi5_3">2、偶而</label>&nbsp;
-      			<input name="FSFI5" type="radio" id="fsfi5_4" value="3"><label for="fsfi5_4">3、有時候</label>&nbsp;
-      			<input name="FSFI5" type="radio" id="fsfi5_5" value="4"><label for="fsfi5_5">4、經常</label>&nbsp;
-      			<input name="FSFI5" type="radio" id="fsfi5_6" value="5"><label for="fsfi5_6">5、總是或幾乎總是</label>
-      			<br>
-      		</p>
-      		<hr>
-      		<p>
-      			<strong>FSFI-6</strong>：
+            <input name="FSFI5" type="radio" id="fsfi5_1" value="0"><label for="fsfi5_1">0、無性活動</label>&nbsp;
+            <input name="FSFI5" type="radio" id="fsfi5_2" value="1"><label for="fsfi5_2">1、沒有或幾乎沒有</label>&nbsp;
+            <input name="FSFI5" type="radio" id="fsfi5_3" value="2"><label for="fsfi5_3">2、偶而</label>&nbsp;
+            <input name="FSFI5" type="radio" id="fsfi5_4" value="3"><label for="fsfi5_4">3、有時候</label>&nbsp;
+            <input name="FSFI5" type="radio" id="fsfi5_5" value="4"><label for="fsfi5_5">4、經常</label>&nbsp;
+            <input name="FSFI5" type="radio" id="fsfi5_6" value="5"><label for="fsfi5_6">5、總是或幾乎總是</label>
+            <br>
+          </p>
+          <hr>
+          <p>
+            <strong>
+              <span>FSFI-6：</span>
+              <span>6. 您在性活動中或性交中性興奮滿意的比率是？</span>
+            </strong>
             <input name="FSFI6" type="hidden" value="99">
-      			<input name="FSFI6" type="radio" id="fsfi6_1" value="0"><label for="fsfi6_1">0、無性活動</label>&nbsp;
-      			<input name="FSFI6" type="radio" id="fsfi6_2" value="1"><label for="fsfi6_2">1、沒有或幾乎沒有</label>&nbsp;
-      			<input name="FSFI6" type="radio" id="fsfi6_3" value="2"><label for="fsfi6_3">2、偶而</label>&nbsp;
-      			<input name="FSFI6" type="radio" id="fsfi6_4" value="3"><label for="fsfi6_4">3、有時候</label>&nbsp;
-      			<input name="FSFI6" type="radio" id="fsfi6_5" value="4"><label for="fsfi6_5">4、經常</label>&nbsp;
-      			<input name="FSFI6" type="radio" id="fsfi6_6" value="5"><label for="fsfi6_6">5、總是或幾乎總是</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>FSFI-7</strong>：
+            <input name="FSFI6" type="radio" id="fsfi6_1" value="0"><label for="fsfi6_1">0、無性活動</label>&nbsp;
+            <input name="FSFI6" type="radio" id="fsfi6_2" value="1"><label for="fsfi6_2">1、沒有或幾乎沒有</label>&nbsp;
+            <input name="FSFI6" type="radio" id="fsfi6_3" value="2"><label for="fsfi6_3">2、偶而</label>&nbsp;
+            <input name="FSFI6" type="radio" id="fsfi6_4" value="3"><label for="fsfi6_4">3、有時候</label>&nbsp;
+            <input name="FSFI6" type="radio" id="fsfi6_5" value="4"><label for="fsfi6_5">4、經常</label>&nbsp;
+            <input name="FSFI6" type="radio" id="fsfi6_6" value="5"><label for="fsfi6_6">5、總是或幾乎總是</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>FSFI-7：</span>
+              <span>7. 您在性活動中或性交中陰道濕潤的比率是？</span>
+            </strong>
             <input name="FSFI7" type="hidden" value="99">
-      			<input name="FSFI7" type="radio" id="fsfi7_1" value="0"><label for="fsfi7_1">0、無性活動</label>&nbsp;
-      			<input name="FSFI7" type="radio" id="fsfi7_2" value="1"><label for="fsfi7_2">1、沒有或幾乎沒有</label>&nbsp;
-      			<input name="FSFI7" type="radio" id="fsfi7_3" value="2"><label for="fsfi7_3">2、偶而</label>&nbsp;
-      			<input name="FSFI7" type="radio" id="fsfi7_4" value="3"><label for="fsfi7_4">3、有時候</label>&nbsp;
-      			<input name="FSFI7" type="radio" id="fsfi7_5" value="4"><label for="fsfi7_5">4、經常</label>&nbsp;
-      			<input name="FSFI7" type="radio" id="fsfi7_6" value="5"><label for="fsfi7_6">5、總是或幾乎總是</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>FSFI-8</strong>：
+            <input name="FSFI7" type="radio" id="fsfi7_1" value="0"><label for="fsfi7_1">0、無性活動</label>&nbsp;
+            <input name="FSFI7" type="radio" id="fsfi7_2" value="1"><label for="fsfi7_2">1、沒有或幾乎沒有</label>&nbsp;
+            <input name="FSFI7" type="radio" id="fsfi7_3" value="2"><label for="fsfi7_3">2、偶而</label>&nbsp;
+            <input name="FSFI7" type="radio" id="fsfi7_4" value="3"><label for="fsfi7_4">3、有時候</label>&nbsp;
+            <input name="FSFI7" type="radio" id="fsfi7_5" value="4"><label for="fsfi7_5">4、經常</label>&nbsp;
+            <input name="FSFI7" type="radio" id="fsfi7_6" value="5"><label for="fsfi7_6">5、總是或幾乎總是</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>FSFI-8：</span>
+              <span>8. 您在性活動中或性交中陰道濕潤的困難程度？</span>
+            </strong>
             <input name="FSFI8" type="hidden" value="99">
-      			<input name="FSFI8" type="radio" id="fsfi8_1" value="0"><label for="fsfi8_1">0、無性活動</label>&nbsp;
-      			<input name="FSFI8" type="radio" id="fsfi8_2" value="1"><label for="fsfi8_2">1、沒有困難</label>&nbsp;
-      			<input name="FSFI8" type="radio" id="fsfi8_3" value="2"><label for="fsfi8_3">2、有一點難</label>&nbsp;
-      			<input name="FSFI8" type="radio" id="fsfi8_4" value="3"><label for="fsfi8_4">3、有時候</label>&nbsp;
-      			<input name="FSFI8" type="radio" id="fsfi8_5" value="4"><label for="fsfi8_5">4、非常困難</label>&nbsp;
-      			<input name="FSFI8" type="radio" id="fsfi8_6" value="5"><label for="fsfi8_6">5、極度困難或完全不可能</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>FSFI-9</strong>：
+            <input name="FSFI8" type="radio" id="fsfi8_1" value="0"><label for="fsfi8_1">0、無性活動</label>&nbsp;
+            <input name="FSFI8" type="radio" id="fsfi8_2" value="1"><label for="fsfi8_2">1、沒有困難</label>&nbsp;
+            <input name="FSFI8" type="radio" id="fsfi8_3" value="2"><label for="fsfi8_3">2、有一點難</label>&nbsp;
+            <input name="FSFI8" type="radio" id="fsfi8_4" value="3"><label for="fsfi8_4">3、有時候</label>&nbsp;
+            <input name="FSFI8" type="radio" id="fsfi8_5" value="4"><label for="fsfi8_5">4、非常困難</label>&nbsp;
+            <input name="FSFI8" type="radio" id="fsfi8_6" value="5"><label for="fsfi8_6">5、極度困難或完全不可能</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>FSFI-9：</span>
+              <span>9. 您在性活動中或性交中保持濕潤的比率？</span>
+            </strong>
             <input name="FSFI9" type="hidden" value="99">
-      			<input name="FSFI9" type="radio" id="fsfi9_1" value="0"><label for="fsfi9_1">0、無性活動</label>&nbsp;
-      			<input name="FSFI9" type="radio" id="fsfi9_2" value="1"><label for="fsfi9_2">1、沒有或幾乎沒有</label>&nbsp;
-      			<input name="FSFI9" type="radio" id="fsfi9_3" value="2"><label for="fsfi9_3">2、偶而</label>&nbsp;
-      			<input name="FSFI9" type="radio" id="fsfi9_4" value="3"><label for="fsfi9_4">3、有時候</label>&nbsp;
-      			<input name="FSFI9" type="radio" id="fsfi9_5" value="4"><label for="fsfi9_5">4、經常</label>&nbsp;
-      			<input name="FSFI9" type="radio" id="fsfi9_6" value="5"><label for="fsfi9_6">5、總是或幾乎總是</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>FSFI-10</strong>：
+            <input name="FSFI9" type="radio" id="fsfi9_1" value="0"><label for="fsfi9_1">0、無性活動</label>&nbsp;
+            <input name="FSFI9" type="radio" id="fsfi9_2" value="1"><label for="fsfi9_2">1、沒有或幾乎沒有</label>&nbsp;
+            <input name="FSFI9" type="radio" id="fsfi9_3" value="2"><label for="fsfi9_3">2、偶而</label>&nbsp;
+            <input name="FSFI9" type="radio" id="fsfi9_4" value="3"><label for="fsfi9_4">3、有時候</label>&nbsp;
+            <input name="FSFI9" type="radio" id="fsfi9_5" value="4"><label for="fsfi9_5">4、經常</label>&nbsp;
+            <input name="FSFI9" type="radio" id="fsfi9_6" value="5"><label for="fsfi9_6">5、總是或幾乎總是</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>FSFI-10：</span>
+              <span>10. 您在性活動中或性交中保持濕潤的困難程度？</span>
+            </strong>
             <input name="FSFI10" type="hidden" value="99">
-      			<input name="FSFI10" type="radio" id="fsfi10_1" value="0"><label for="fsfi10_1">0、無性活動</label> &nbsp;
-      			<input name="FSFI10" type="radio" id="fsfi10_2" value="1"><label for="fsfi10_2">1、沒有困難</label>&nbsp;
-      			<input name="FSFI10" type="radio" id="fsfi10_3" value="2"><label for="fsfi10_3">2、有一點難</label>&nbsp;
-      			<input name="FSFI10" type="radio" id="fsfi10_4" value="3"><label for="fsfi10_4">3、有時候</label>&nbsp;
-      			<input name="FSFI10" type="radio" id="fsfi10_5" value="4"><label for="fsfi10_5">4、非常困難</label>&nbsp;
-      			<input name="FSFI10" type="radio" id="fsfi10_6" value="5"><label for="fsfi10_6">5、極度困難或完全不可能</label>
-      			<br>
-      		</p>
-      		<hr>
-      		<p>
-      			<strong>FSFI-11</strong>：
+            <input name="FSFI10" type="radio" id="fsfi10_1" value="0"><label for="fsfi10_1">0、無性活動</label> &nbsp;
+            <input name="FSFI10" type="radio" id="fsfi10_2" value="1"><label for="fsfi10_2">1、沒有困難</label>&nbsp;
+            <input name="FSFI10" type="radio" id="fsfi10_3" value="2"><label for="fsfi10_3">2、有一點難</label>&nbsp;
+            <input name="FSFI10" type="radio" id="fsfi10_4" value="3"><label for="fsfi10_4">3、有時候</label>&nbsp;
+            <input name="FSFI10" type="radio" id="fsfi10_5" value="4"><label for="fsfi10_5">4、非常困難</label>&nbsp;
+            <input name="FSFI10" type="radio" id="fsfi10_6" value="5"><label for="fsfi10_6">5、極度困難或完全不可能</label>
+            <br>
+          </p>
+          <hr>
+          <p>
+            <strong>
+              <span>FSFI-11：</span>
+              <span>11. 當您有性刺激或性交時您達到高潮的比率？</span>
+            </strong>
             <input name="FSFI11" type="hidden" value="99">
-      			<input name="FSFI11" type="radio" id="fsfi11_1" value="0"><label for="fsfi11_1">0、無性活動</label>&nbsp;
-      			<input name="FSFI11" type="radio" id="fsfi11_2" value="1"><label for="fsfi11_2">1、沒有或幾乎沒有</label>&nbsp;
-      			<input name="FSFI11" type="radio" id="fsfi11_3" value="2"><label for="fsfi11_3">2、偶而</label>&nbsp;
-      			<input name="FSFI11" type="radio" id="fsfi11_4" value="3"><label for="fsfi11_4">3、有時候</label>&nbsp;
-      			<input name="FSFI11" type="radio" id="fsfi11_5" value="4"><label for="fsfi11_5">4、經常</label>&nbsp;
-      			<input name="FSFI11" type="radio" id="fsfi11_6" value="5"><label for="fsfi11_6">5、總是或幾乎總是</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>FSFI-12</strong>：
+            <input name="FSFI11" type="radio" id="fsfi11_1" value="0"><label for="fsfi11_1">0、無性活動</label>&nbsp;
+            <input name="FSFI11" type="radio" id="fsfi11_2" value="1"><label for="fsfi11_2">1、沒有或幾乎沒有</label>&nbsp;
+            <input name="FSFI11" type="radio" id="fsfi11_3" value="2"><label for="fsfi11_3">2、偶而</label>&nbsp;
+            <input name="FSFI11" type="radio" id="fsfi11_4" value="3"><label for="fsfi11_4">3、有時候</label>&nbsp;
+            <input name="FSFI11" type="radio" id="fsfi11_5" value="4"><label for="fsfi11_5">4、經常</label>&nbsp;
+            <input name="FSFI11" type="radio" id="fsfi11_6" value="5"><label for="fsfi11_6">5、總是或幾乎總是</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>FSFI-12：</span>
+              <span>12. 當您有性刺激或性交時您達到高潮的困難程度？</span>
+            </strong>
             <input name="FSFI12" type="hidden" value="99">
-      			<input name="FSFI12" type="radio" id="fsfi12_1" value="0"><label for="fsfi12_1">0、無性活動</label>&nbsp;
-      			<input name="FSFI12" type="radio" id="fsfi12_2" value="1"><label for="fsfi12_2">1、沒有困難</label>&nbsp;
-      			<input name="FSFI12" type="radio" id="fsfi12_3" value="2"><label for="fsfi12_3">2、有一點難</label>&nbsp;
-      			<input name="FSFI12" type="radio" id="fsfi12_4" value="3"><label for="fsfi12_4">3、有時候</label>&nbsp;
-      			<input name="FSFI12" type="radio" id="fsfi12_5" value="4"><label for="fsfi12_5">4、非常困難</label>&nbsp;
-      			<input name="FSFI12" type="radio" id="fsfi12_6" value="5"><label for="fsfi12_6">5、極度困難或完全不可能</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>FSFI-13</strong>：
+            <input name="FSFI12" type="radio" id="fsfi12_1" value="0"><label for="fsfi12_1">0、無性活動</label>&nbsp;
+            <input name="FSFI12" type="radio" id="fsfi12_2" value="1"><label for="fsfi12_2">1、沒有困難</label>&nbsp;
+            <input name="FSFI12" type="radio" id="fsfi12_3" value="2"><label for="fsfi12_3">2、有一點難</label>&nbsp;
+            <input name="FSFI12" type="radio" id="fsfi12_4" value="3"><label for="fsfi12_4">3、有時候</label>&nbsp;
+            <input name="FSFI12" type="radio" id="fsfi12_5" value="4"><label for="fsfi12_5">4、非常困難</label>&nbsp;
+            <input name="FSFI12" type="radio" id="fsfi12_6" value="5"><label for="fsfi12_6">5、極度困難或完全不可能</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>FSFI-13：</span>
+              <span>13. 您在性活動中或性交中對於能夠達到高潮的滿意程度是？</span>
+            </strong>
             <input name="FSFI13" type="hidden" value="99">
-      			<input name="FSFI13" type="radio" id="fsfi13_1" value="0"><label for="fsfi13_1">0、無性活動</label>&nbsp;
-      			<input name="FSFI13" type="radio" id="fsfi13_2" value="1"><label for="fsfi13_2">1、非常不滿意</label>&nbsp;
-      			<input name="FSFI13" type="radio" id="fsfi13_3" value="2"><label for="fsfi13_3">2、不滿意</label>&nbsp;
-      			<input name="FSFI13" type="radio" id="fsfi13_4" value="3"><label for="fsfi13_4">3、普通</label>&nbsp;
-      			<input name="FSFI13" type="radio" id="fsfi13_5" value="4"><label for="fsfi13_5">4、滿意</label>&nbsp;
-      			<input name="FSFI13" type="radio" id="fsfi13_6" value="5"><label for="fsfi13_6">5、非常滿意</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>FSFI-14</strong>：
+            <input name="FSFI13" type="radio" id="fsfi13_1" value="0"><label for="fsfi13_1">0、無性活動</label>&nbsp;
+            <input name="FSFI13" type="radio" id="fsfi13_2" value="1"><label for="fsfi13_2">1、非常不滿意</label>&nbsp;
+            <input name="FSFI13" type="radio" id="fsfi13_3" value="2"><label for="fsfi13_3">2、不滿意</label>&nbsp;
+            <input name="FSFI13" type="radio" id="fsfi13_4" value="3"><label for="fsfi13_4">3、普通</label>&nbsp;
+            <input name="FSFI13" type="radio" id="fsfi13_5" value="4"><label for="fsfi13_5">4、滿意</label>&nbsp;
+            <input name="FSFI13" type="radio" id="fsfi13_6" value="5"><label for="fsfi13_6">5、非常滿意</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>FSFI-14：</span>
+              <span>14. 您在性活動中與伴侶的親密度，您的滿意程度是？</span>
+            </strong>
             <input name="FSFI14" type="hidden" value="99">
-      			<input name="FSFI14" type="radio" id="fsfi14_1" value="0"><label for="fsfi14_1">0、無性活動</label>&nbsp;
-      			<input name="FSFI14" type="radio" id="fsfi14_2" value="1"><label for="fsfi14_2">1、非常不滿意</label>&nbsp;
-      			<input name="FSFI14" type="radio" id="fsfi14_3" value="2"><label for="fsfi14_3">2、不滿意</label>&nbsp;
-      			<input name="FSFI14" type="radio" id="fsfi14_4" value="3"><label for="fsfi14_4">3、普通</label>&nbsp;
-      			<input name="FSFI14" type="radio" id="fsfi14_5" value="4"><label for="fsfi14_5">4、滿意</label>&nbsp;
-      			<input name="FSFI14" type="radio" id="fsfi14_6" value="5"><label for="fsfi14_6">5、非常滿意</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>FSFI-15</strong>：
+            <input name="FSFI14" type="radio" id="fsfi14_1" value="0"><label for="fsfi14_1">0、無性活動</label>&nbsp;
+            <input name="FSFI14" type="radio" id="fsfi14_2" value="1"><label for="fsfi14_2">1、非常不滿意</label>&nbsp;
+            <input name="FSFI14" type="radio" id="fsfi14_3" value="2"><label for="fsfi14_3">2、不滿意</label>&nbsp;
+            <input name="FSFI14" type="radio" id="fsfi14_4" value="3"><label for="fsfi14_4">3、普通</label>&nbsp;
+            <input name="FSFI14" type="radio" id="fsfi14_5" value="4"><label for="fsfi14_5">4、滿意</label>&nbsp;
+            <input name="FSFI14" type="radio" id="fsfi14_6" value="5"><label for="fsfi14_6">5、非常滿意</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>FSFI-15：</span>
+              <span>15. 您對於與伴侶的性關係滿意嗎？</span>
+            </strong>
             <input name="FSFI15" type="hidden" value="99">
-      			<input name="FSFI15" type="radio" id="fsfi15_1" value="0"><label for="fsfi15_1">0、無性活動</label>&nbsp;
-      			<input name="FSFI15" type="radio" id="fsfi15_2" value="1"><label for="fsfi15_2">1、非常不滿意</label>&nbsp;
-      			<input name="FSFI15" type="radio" id="fsfi15_3" value="2"><label for="fsfi15_3">2、不滿意</label>&nbsp;
-      			<input name="FSFI15" type="radio" id="fsfi15_4" value="3"><label for="fsfi15_4">3、普通</label>&nbsp;
-      			<input name="FSFI15" type="radio" id="fsfi15_5" value="4"><label for="fsfi15_5">4、滿意</label>&nbsp;
-      			<input name="FSFI15" type="radio" id="fsfi15_6" value="5"><label for="fsfi15_6">5、非常滿意</label>
-      			<br>
-      		</p>
-      		<hr>
-      		<p>
-      			<strong>FSFI-16</strong>：
+            <input name="FSFI15" type="radio" id="fsfi15_1" value="0"><label for="fsfi15_1">0、無性活動</label>&nbsp;
+            <input name="FSFI15" type="radio" id="fsfi15_2" value="1"><label for="fsfi15_2">1、非常不滿意</label>&nbsp;
+            <input name="FSFI15" type="radio" id="fsfi15_3" value="2"><label for="fsfi15_3">2、不滿意</label>&nbsp;
+            <input name="FSFI15" type="radio" id="fsfi15_4" value="3"><label for="fsfi15_4">3、普通</label>&nbsp;
+            <input name="FSFI15" type="radio" id="fsfi15_5" value="4"><label for="fsfi15_5">4、滿意</label>&nbsp;
+            <input name="FSFI15" type="radio" id="fsfi15_6" value="5"><label for="fsfi15_6">5、非常滿意</label>
+            <br>
+          </p>
+          <hr>
+          <p>
+            <strong>
+              <span>FSFI-16：</span>
+              <span>16. 您對您整體性生活滿意嗎？</span>
+            </strong>
             <input name="FSFI16" type="hidden" value="99">
-      			<input name="FSFI16" type="radio" id="fsfi16_1" value="0"><label for="fsfi16_1">0、無性活動</label>&nbsp;
-      			<input name="FSFI16" type="radio" id="fsfi16_2" value="1"><label for="fsfi16_2">1、非常不滿意</label>&nbsp;
-      			<input name="FSFI16" type="radio" id="fsfi16_3" value="2"><label for="fsfi16_3">2、不滿意</label>&nbsp;
-      			<input name="FSFI16" type="radio" id="fsfi16_4" value="3"><label for="fsfi16_4">3、普通</label>&nbsp;
-      			<input name="FSFI16" type="radio" id="fsfi16_5" value="4"><label for="fsfi16_5">4、滿意</label>&nbsp;
-      			<input name="FSFI16" type="radio" id="fsfi16_6" value="5"><label for="fsfi16_6">5、非常滿意</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>FSFI-17</strong>：
+            <input name="FSFI16" type="radio" id="fsfi16_1" value="0"><label for="fsfi16_1">0、無性活動</label>&nbsp;
+            <input name="FSFI16" type="radio" id="fsfi16_2" value="1"><label for="fsfi16_2">1、非常不滿意</label>&nbsp;
+            <input name="FSFI16" type="radio" id="fsfi16_3" value="2"><label for="fsfi16_3">2、不滿意</label>&nbsp;
+            <input name="FSFI16" type="radio" id="fsfi16_4" value="3"><label for="fsfi16_4">3、普通</label>&nbsp;
+            <input name="FSFI16" type="radio" id="fsfi16_5" value="4"><label for="fsfi16_5">4、滿意</label>&nbsp;
+            <input name="FSFI16" type="radio" id="fsfi16_6" value="5"><label for="fsfi16_6">5、非常滿意</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>FSFI-17：</span>
+              <span>17. 您對於陰道插入時感到不舒服或疼痛的比率是？</span>
+            </strong>
             <input name="FSFI17" type="hidden" value="99">
-      			<input name="FSFI17" type="radio" id="fsfi17_1" value="0"><label for="fsfi17_1">0、無性活動</label>&nbsp;
-      			<input name="FSFI17" type="radio" id="fsfi17_2" value="1"><label for="fsfi17_2">1、沒有或幾乎沒有</label>&nbsp;
-      			<input name="FSFI17" type="radio" id="fsfi17_3" value="2"><label for="fsfi17_3">2、偶而</label>&nbsp;
-      			<input name="FSFI17" type="radio" id="fsfi17_4" value="3"><label for="fsfi17_4">3、有時候</label>&nbsp;
-      			<input name="FSFI17" type="radio" id="fsfi17_5" value="4"><label for="fsfi17_5">4、經常</label>&nbsp;
-      			<input name="FSFI17" type="radio" id="fsfi17_6" value="5"><label for="fsfi17_6">5、總是或幾乎總是</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>FSFI-18</strong>：
+            <input name="FSFI17" type="radio" id="fsfi17_1" value="0"><label for="fsfi17_1">0、無性活動</label>&nbsp;
+            <input name="FSFI17" type="radio" id="fsfi17_2" value="1"><label for="fsfi17_2">1、沒有或幾乎沒有</label>&nbsp;
+            <input name="FSFI17" type="radio" id="fsfi17_3" value="2"><label for="fsfi17_3">2、偶而</label>&nbsp;
+            <input name="FSFI17" type="radio" id="fsfi17_4" value="3"><label for="fsfi17_4">3、有時候</label>&nbsp;
+            <input name="FSFI17" type="radio" id="fsfi17_5" value="4"><label for="fsfi17_5">4、經常</label>&nbsp;
+            <input name="FSFI17" type="radio" id="fsfi17_6" value="5"><label for="fsfi17_6">5、總是或幾乎總是</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>FSFI-18：</span>
+              <span>18. 您對於陰道插入後感到不舒服或疼痛的比率是？</span>
+            </strong>
             <input name="FSFI18" type="hidden" value="99">
-      			<input name="FSFI18" type="radio" id="fsfi18_1" value="0"><label for="fsfi18_1">0、無性活動</label>&nbsp;
-      			<input name="FSFI18" type="radio" id="fsfi18_2" value="1"><label for="fsfi18_2">1、沒有或幾乎沒有</label>&nbsp;
-      			<input name="FSFI18" type="radio" id="fsfi18_3" value="2"><label for="fsfi18_3">2、偶而</label>&nbsp;
-      			<input name="FSFI18" type="radio" id="fsfi18_4" value="3"><label for="fsfi18_4">3、有時候</label>&nbsp;
-      			<input name="FSFI18" type="radio" id="fsfi18_5" value="4"><label for="fsfi18_5">4、經常</label>&nbsp;
-      			<input name="FSFI18" type="radio" id="fsfi18_6" value="5"><label for="fsfi18_6">5、總是或幾乎總是</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>FSFI-19</strong>：
+            <input name="FSFI18" type="radio" id="fsfi18_1" value="0"><label for="fsfi18_1">0、無性活動</label>&nbsp;
+            <input name="FSFI18" type="radio" id="fsfi18_2" value="1"><label for="fsfi18_2">1、沒有或幾乎沒有</label>&nbsp;
+            <input name="FSFI18" type="radio" id="fsfi18_3" value="2"><label for="fsfi18_3">2、偶而</label>&nbsp;
+            <input name="FSFI18" type="radio" id="fsfi18_4" value="3"><label for="fsfi18_4">3、有時候</label>&nbsp;
+            <input name="FSFI18" type="radio" id="fsfi18_5" value="4"><label for="fsfi18_5">4、經常</label>&nbsp;
+            <input name="FSFI18" type="radio" id="fsfi18_6" value="5"><label for="fsfi18_6">5、總是或幾乎總是</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>FSFI-19：</span>
+              <span>19. 您對於陰道插入時或插入後感到不舒服或疼痛的程度？</span>
+            </strong>
             <input name="FSFI19" type="hidden" value="99">
-      			<input name="FSFI19" type="radio" id="fsfi19_1" value="0"><label for="fsfi19_1">0、無性活動</label>&nbsp;
-      			<input name="FSFI19" type="radio" id="fsfi19_2" value="1"><label for="fsfi19_2">1、很低或完全沒有</label>&nbsp;
-      			<input name="FSFI19" type="radio" id="fsfi19_3" value="2"><label for="fsfi19_3">2、低</label>&nbsp;
-      			<input name="FSFI19" type="radio" id="fsfi19_4" value="3"><label for="fsfi19_4">3、普通</label>&nbsp;
-      			<input name="FSFI19" type="radio" id="fsfi19_5" value="4"><label for="fsfi19_5">4、高</label>&nbsp;
-      			<input name="FSFI19" type="radio" id="fsfi19_6" value="5"><label for="fsfi19_6">5、很高</label>
-      			<br>
-      		</p>
-      	</div>
-      	<div class="iief_info" style="display:none;">
-      		<h2>國際男性性功能指標（IIEF）調查</h2>
-      		<p>
-      			<strong>IIEF-1</strong>：
+            <input name="FSFI19" type="radio" id="fsfi19_1" value="0"><label for="fsfi19_1">0、無性活動</label>&nbsp;
+            <input name="FSFI19" type="radio" id="fsfi19_2" value="1"><label for="fsfi19_2">1、很低或完全沒有</label>&nbsp;
+            <input name="FSFI19" type="radio" id="fsfi19_3" value="2"><label for="fsfi19_3">2、低</label>&nbsp;
+            <input name="FSFI19" type="radio" id="fsfi19_4" value="3"><label for="fsfi19_4">3、普通</label>&nbsp;
+            <input name="FSFI19" type="radio" id="fsfi19_5" value="4"><label for="fsfi19_5">4、高</label>&nbsp;
+            <input name="FSFI19" type="radio" id="fsfi19_6" value="5"><label for="fsfi19_6">5、很高</label>
+            <br>
+          </p>
+        </div>
+        <div class="iief_info ipad" style="display:none;">
+          <h2>國際男性性功能指標（IIEF）調查<span class="ipad-qs">：請依據您自身狀況點選。</span></h2>
+          <p>
+            <strong>
+              <span>IIEF-1：</span>
+              <span>1. 您對於自己能勃起且能維持勃起狀態有多大信心？</span>
+            </strong>
             <input name="IIEF1" type="hidden" value="99">
-      			<input name="IIEF1" type="radio" id="iief1_1" value="1"><label for="iief1_1">1、非常低</label>&nbsp;
-      			<input name="IIEF1" type="radio" id="iief1_2" value="2"><label for="iief1_2">2、低</label>&nbsp;
-      			<input name="IIEF1" type="radio" id="iief1_3" value="3"><label for="iief1_3">3、中度</label>&nbsp;
-      			<input name="IIEF1" type="radio" id="iief1_4" value="4"><label for="iief1_4">4、有信心</label>&nbsp;
-      			<input name="IIEF1" type="radio" id="iief1_5" value="5"><label for="iief1_5">5、信心滿滿</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>IIEF-2</strong>：
+            <input name="IIEF1" type="radio" id="iief1_1" value="1"><label for="iief1_1">1、非常低</label>&nbsp;
+            <input name="IIEF1" type="radio" id="iief1_2" value="2"><label for="iief1_2">2、低</label>&nbsp;
+            <input name="IIEF1" type="radio" id="iief1_3" value="3"><label for="iief1_3">3、中度</label>&nbsp;
+            <input name="IIEF1" type="radio" id="iief1_4" value="4"><label for="iief1_4">4、有信心</label>&nbsp;
+            <input name="IIEF1" type="radio" id="iief1_5" value="5"><label for="iief1_5">5、信心滿滿</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>IIEF-2：</span>
+              <span>2. 您嘗試性交時，陰莖勃起的堅硬度可您順利進入女性陰道嗎？</span>
+            </strong>
             <input name="IIEF2" type="hidden" value="99">
-      			<input name="IIEF2" type="radio" id="iief2_1" value="1"><label for="iief2_1">1、完全或幾乎不可以</label>&nbsp;
-      			<input name="IIEF2" type="radio" id="iief2_2" value="2"><label for="iief2_2">2、少數幾次可以</label>&nbsp;
-      			<input name="IIEF2" type="radio" id="iief2_3" value="3"><label for="iief2_3">3、一半左右可以</label>&nbsp;
-      			<input name="IIEF2" type="radio" id="iief2_4" value="4"><label for="iief2_4">4、多數可以</label>&nbsp;
-      			<input name="IIEF2" type="radio" id="iief2_5" value="5"><label for="iief2_5">5、幾乎每次都可以</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>IIEF-3</strong>：
+            <input name="IIEF2" type="radio" id="iief2_1" value="1"><label for="iief2_1">1、完全或幾乎不可以</label>&nbsp;
+            <input name="IIEF2" type="radio" id="iief2_2" value="2"><label for="iief2_2">2、少數幾次可以</label>&nbsp;
+            <input name="IIEF2" type="radio" id="iief2_3" value="3"><label for="iief2_3">3、一半左右可以</label>&nbsp;
+            <input name="IIEF2" type="radio" id="iief2_4" value="4"><label for="iief2_4">4、多數可以</label>&nbsp;
+            <input name="IIEF2" type="radio" id="iief2_5" value="5"><label for="iief2_5">5、幾乎每次都可以</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>IIEF-3：</span>
+              <span>3. 性交中，陰莖置入伴侶陰道中未射精前您可以維持陰莖的堅硬度嗎？</span>
+            </strong>
             <input name="IIEF3" type="hidden" value="99">
-      			<input name="IIEF3" type="radio" id="iief3_1" value="1"><label for="iief3_1">1、完全或幾乎不可以</label>&nbsp;
-      			<input name="IIEF3" type="radio" id="iief3_2" value="2"><label for="iief3_2">2、少數幾次可以</label>&nbsp;
-      			<input name="IIEF3" type="radio" id="iief3_3" value="3"><label for="iief3_3">3、一半左右可以</label>&nbsp;
-      			<input name="IIEF3" type="radio" id="iief3_4" value="4"><label for="iief3_4">4、多數可以</label>&nbsp;
-      			<input name="IIEF3" type="radio" id="iief3_5" value="5"><label for="iief3_5">5、幾乎每次都可以</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>IIEF-4</strong>：
+            <input name="IIEF3" type="radio" id="iief3_1" value="1"><label for="iief3_1">1、完全或幾乎不可以</label>&nbsp;
+            <input name="IIEF3" type="radio" id="iief3_2" value="2"><label for="iief3_2">2、少數幾次可以</label>&nbsp;
+            <input name="IIEF3" type="radio" id="iief3_3" value="3"><label for="iief3_3">3、一半左右可以</label>&nbsp;
+            <input name="IIEF3" type="radio" id="iief3_4" value="4"><label for="iief3_4">4、多數可以</label>&nbsp;
+            <input name="IIEF3" type="radio" id="iief3_5" value="5"><label for="iief3_5">5、幾乎每次都可以</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>IIEF-4：</span>
+              <span>4. 在性交完成前，您覺得維持陰莖勃起很困難嗎？</span>
+            </strong>
             <input name="IIEF4" type="hidden" value="99">
-      			<input name="IIEF4" type="radio" id="iief4_1" value="1"><label for="iief4_1">1、極度困難</label>&nbsp;
-      			<input name="IIEF4" type="radio" id="iief4_2" value="2"><label for="iief4_2">2、非常困難</label>&nbsp;
-      			<input name="IIEF4" type="radio" id="iief4_3" value="3"><label for="iief4_3">3、困難</label>&nbsp;
-      			<input name="IIEF4" type="radio" id="iief4_4" value="4"><label for="iief4_4">4、有點困難</label>&nbsp;
-      			<input name="IIEF4" type="radio" id="iief4_5" value="5"><label for="iief4_5">5、完全不困難</label>
-      			<br>
-      		</p>
-      		<p>
-      			<strong>IIEF-5</strong>：
+            <input name="IIEF4" type="radio" id="iief4_1" value="1"><label for="iief4_1">1、極度困難</label>&nbsp;
+            <input name="IIEF4" type="radio" id="iief4_2" value="2"><label for="iief4_2">2、非常困難</label>&nbsp;
+            <input name="IIEF4" type="radio" id="iief4_3" value="3"><label for="iief4_3">3、困難</label>&nbsp;
+            <input name="IIEF4" type="radio" id="iief4_4" value="4"><label for="iief4_4">4、有點困難</label>&nbsp;
+            <input name="IIEF4" type="radio" id="iief4_5" value="5"><label for="iief4_5">5、完全不困難</label>
+            <br>
+          </p>
+          <p>
+            <strong>
+              <span>IIEF-5：</span>
+              <span>5. 當您嘗試性交時，您對整體表現覺得滿意嗎？</span>
+            </strong>
             <input name="IIEF5" type="hidden" value="99">
-      			<input name="IIEF5" type="radio" id="iief5_1" value="1"><label for="iief5_1">1、極度不滿意</label>&nbsp;
-      			<input name="IIEF5" type="radio" id="iief5_2" value="2"><label for="iief5_2">2、只有少數幾次滿意</label>&nbsp;
-      			<input name="IIEF5" type="radio" id="iief5_3" value="3"><label for="iief5_3">3、一半左右滿意</label>&nbsp;
-      			<input name="IIEF5" type="radio" id="iief5_4" value="4"><label for="iief5_4">4、大多數滿意</label>&nbsp;
-      			<input name="IIEF5" type="radio" id="iief5_5" value="5"><label for="iief5_5">5、幾乎每次都很滿意</label>
-      			<br>
-      		</p>
-      	</div>
+            <input name="IIEF5" type="radio" id="iief5_1" value="1"><label for="iief5_1">1、極度不滿意</label>&nbsp;
+            <input name="IIEF5" type="radio" id="iief5_2" value="2"><label for="iief5_2">2、只有少數幾次滿意</label>&nbsp;
+            <input name="IIEF5" type="radio" id="iief5_3" value="3"><label for="iief5_3">3、一半左右滿意</label>&nbsp;
+            <input name="IIEF5" type="radio" id="iief5_4" value="4"><label for="iief5_4">4、大多數滿意</label>&nbsp;
+            <input name="IIEF5" type="radio" id="iief5_5" value="5"><label for="iief5_5">5、幾乎每次都很滿意</label>
+            <br>
+          </p>
+        </div>
       	<div class="doctor_registration">
       		<h2>醫師登記表</h2>
           <p>
