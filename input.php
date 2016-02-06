@@ -411,7 +411,7 @@
 
     }
     $_POST["description"] = str_replace( chr(13).chr(10), "  ",$_POST["description"]);
-    echo $_POST["description"];
+    //echo $_POST["description"];
     //exit();
     $md5id = md5($_POST["id"]);
 
