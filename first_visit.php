@@ -7,6 +7,21 @@
   $query_RecHospital = "SELECT * FROM `hospital` ";
   $RecHospital = mysqli_query($conn, $query_RecHospital);
 
+  $adminMD5 = md5('admin');
+  $docMD5 = md5('doctor');
+  $assisMD5 = md5('assistant');
+  $patientMD5 = md5('patient');
+
+  if(!isset($_GET['n']) || 
+      ($_GET['n'] != $adminMD5 && $_GET['n'] != $docMD5 && 
+      $_GET['n'] != $assisMD5 && $_GET['n'] != $patientMD5)
+    ){
+    header('HTTP/1.0 403 Forbidden');
+    die;
+  }
+
+  $isPatient = $_GET['n'] == $patientMD5;
+
 ?>
 <!DOCTYPE html>
   <head>
@@ -110,10 +125,14 @@
   </style>
 
   </head>
-  <body>
-     
-      <?php require_once('navbar.php');  ?>
-      
+  <?php if($isPatient){ ?>
+    <body style="padding-top: 0px;">
+  <?php }else{
+    require_once('navbar.php');
+  ?>
+    <body>
+  <?php } ?>
+
       <div class="container">
       	<form name="formJoin" method="post" action="input.php" onSubmit="return checkForm();">
       	<div class="basic_info">
@@ -127,10 +146,18 @@
       			<strong>就診醫療院所</strong>：
       			<select name="h_name">
                     <option value="NA">請選擇</option>
-                    <?php while ($row_RecHospital=mysqli_fetch_assoc($RecHospital)) { ?>
-                    <option value=<?php echo $row_RecHospital["h_name"]; ?>><?php echo $row_RecHospital["h_id"];?>、<?php echo $row_RecHospital["h_name"];?></option>
+                    <?php 
+                      while ($row_RecHospital=mysqli_fetch_assoc($RecHospital)) { 
+                        $strHid = $row_RecHospital["h_id"];
+                        $strHn = $row_RecHospital["h_name"];
+                        $strSelect = ($row_RecHospital["h_id"] == $row_RecMember["h_id"])? 
+                          ' selected="selected"' : '';
+                    ?>
+                    <option value=<?php echo $strHn.$strSelect; ?>>
+                      <?php echo $strHid;?>、<?php echo $strHn;?>
+                    </option>
                     <?php } ?>
-            </select>&nbsp;*
+            </select>&nbsp;
       			<br>
       		</p>
       		<p>
@@ -1216,6 +1243,7 @@
             <br>
           </p>
         </div>
+        <?php if(!$isPatient) { ?>
       	<div class="doctor_registration">
       		<h2>醫師登記表</h2>
           <p>
@@ -1746,16 +1774,17 @@
             <textarea name="description" rows="4" cols="50" maxlength="250"></textarea>
           </p>
         </div>
+        <?php } ?>
         <div class="col-sm-offset-4 col-sm-10">
           <input name="action" type="hidden" id="action" value="join">
           <button type="button" class="btn btn-primary btn-lg" onClick="window.history.back();">
-            <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>&nbsp;&nbsp;Back
+            <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>&nbsp;&nbsp;回上頁
           </button>&nbsp;&nbsp;
           <button type="reset" class="btn btn-danger btn-lg">
-            <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>&nbsp;&nbsp;Reset
+            <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>&nbsp;&nbsp;重填
           </button>&nbsp;&nbsp;
           <button type="submit" class="btn btn-success btn-lg" onClick="return makesure();">
-            <span class="glyphicon glyphicon-saved" aria-hidden="true"></span>&nbsp;&nbsp;Added
+            <span class="glyphicon glyphicon-saved" aria-hidden="true"></span>&nbsp;&nbsp;儲存
           </button>
         </div>
       	</form>

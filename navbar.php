@@ -1,12 +1,24 @@
 <?php
   
   $strCurrentMember = "";
+  $lstLoginMember = array();
   if($row_RecAdmin && isset($row_RecAdmin['m_name'])){
+    $lstLoginMember = $row_RecAdmin;
     $strCurrentMember = $row_RecAdmin['m_name'];
   }else if($row_RecMember && isset($row_RecMember['m_name'])){
+    $lstLoginMember = $row_RecMember;
     $strCurrentMember = $row_RecMember['m_name'];  
+  }else{
+    exit;
   }
   
+  if($lstLoginMember['m_level'] == 'assistant'){
+    $strLevelName = '助理';
+  }else{
+    $strLevelName = '醫生';
+  }
+
+  $strNKey = md5($lstLoginMember['m_level']);
 
 ?>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -27,8 +39,8 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">新增病歷 <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="first_visit.php">病人自填</a></li>
-            <li><a href="#">??</a></li>
+            <li><a href="first_visit.php?n=<?php echo md5('patient'); ?>">病人自填</a></li>
+            <li><a href="first_visit.php?n=<?php echo $strNKey; ?>"><?php echo $strLevelName; ?>填寫</a></li>
           </ul>
         </li>
 
