@@ -2,11 +2,7 @@
   header("Content-Type: text/html; charset=utf-8");
   session_start();
   include_once("connect.php");
-  require_once("check.php");
-
-  $query_RecMember = "SELECT * FROM `member` WHERE `m_account`='".$_SESSION["loginMember"]."'";
-  $RecMember = mysqli_query($conn, $query_RecMember); 
-  $row_RecMember=mysqli_fetch_assoc($RecMember);
+  include_once("check.php");
 
   $query_RecHospital = "SELECT * FROM `hospital` WHERE `h_id`='".$row_RecMember["h_id"]."'";
   $RecHospital = mysqli_query($conn, $query_RecHospital);
@@ -130,31 +126,9 @@
       window.location.href='assistant_center.php';
     </script>
     <?php } ?>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="login.php">National Registration of Ketamine Uropathy</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="first_visit.php">新增病歷</a></li>
-            <li><a href="medical_list.php">瀏覽病歷</a></li>
-            <li><a href="hospital.php">參與醫院</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="login.php"><span class="glyphicon glyphicon-user"></span>&nbsp;<?php echo $row_RecMember["m_name"];?></a></li>
-            <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    
+    <?php require_once('navbar.php');  ?>
+      
     <div class="container theme-showcase" role="main">
       <div class="jumbotron">
         <div class="page-header">

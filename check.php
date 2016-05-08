@@ -7,4 +7,9 @@
 	if(!isset($_SESSION["loginMember"]) || ($_SESSION["loginMember"]=="")){
 		header("Location: index.php");
 	}
+
+	$query_RecMember = "SELECT * FROM `member` WHERE `m_account`='" . $_SESSION["loginMember"] . "'";
+  	$RecMember = mysqli_query($conn, $query_RecMember); 
+  	$row_RecMember = mysqli_fetch_assoc($RecMember);
+
 ?>

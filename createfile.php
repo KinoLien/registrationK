@@ -4,11 +4,6 @@
 	include_once("connect.php");
 	include_once("check.php");
 
-
-	$query_RecMember = "SELECT * FROM `member` WHERE `m_account`='".$_SESSION["loginMember"]."'";
-	$RecMember = mysqli_query($conn, $query_RecMember); 
-	$row_RecMember=mysqli_fetch_assoc($RecMember);
-
 	if($row_RecMember["m_level"] == 'admin'){
 		$query_RecMedical = "SELECT * FROM `medical` ORDER BY `joindatetime` DESC";
 		$RecMedical = mysqli_query($conn, $query_RecMedical);

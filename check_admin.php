@@ -15,4 +15,8 @@
 	    header("Location: member_center.php");
 	}
 
+	$query_RecMember = "SELECT * FROM `member` WHERE `m_account`='" . $_SESSION["loginMember"] . "'";
+  	$RecMember = mysqli_query($conn, $query_RecMember); 
+  	$row_RecMember = mysqli_fetch_assoc($RecMember);
+
 ?>
