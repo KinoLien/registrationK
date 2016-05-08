@@ -87,10 +87,10 @@
           <div class="page-header">
             <h2>瀏覽病歷</h2>
           </div>
-          <div class="col-sm-offset-9 col-sm-10">
-            <button type="button" class="btn btn-primary" onclick="location.href='first_visit.php'">
+          <div class="col-sm-offset-10 col-sm-10">
+            <!-- <button type="button" class="btn btn-primary" onclick="location.href='first_visit.php'">
               <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp;新增
-            </button>
+            </button> -->
             <button type="button" class="btn btn-info" onclick="location.href='createfile.php?action=excel'">
               <span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span>&nbsp;Excel
             </button>
