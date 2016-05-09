@@ -20,7 +20,7 @@
     $query_RecMedical = "SELECT * FROM `medical` WHERE `sn`='".$_GET["id"]."'";
     $RecMedical = mysqli_query($conn, $query_RecMedical);
     $row_RecMedical = mysqli_fetch_assoc($RecMedical);
-    if($row_RecMedical["m_sn"] != $row_RecMember["m_name"]){
+    if($row_RecMedical["m_sn"] != $row_RecMember["m_sn"]){
       header("Location: medical_list.php");
     }
   }
