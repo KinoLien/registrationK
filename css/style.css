@@ -45,6 +45,13 @@
     cursor:pointer;
   }
 
+  input[type=radio]:disabled + label, input[type=checkbox]:disabled + label {
+    opacity: 0.5;
+    cursor: default;
+    /*color: #a7a7a7;
+    background-color: #efefef;*/
+  }
+
   input[type=radio]:checked + label, input[type=checkbox]:checked + label {
     background-image: none;
     background-color: #C8E3FF;
