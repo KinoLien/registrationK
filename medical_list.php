@@ -73,11 +73,15 @@
   </script>
   </head>
   <body>
-    <?php if(isset($_GET["loginStats"]) && ($_GET["loginStats"] == "1")){ ?>
-    <script language="javascript">
-      alert('初診病歷新增成功。\n');
-      window.location.href='medical_list.php';
-    </script>
+    <?php 
+      if(isset($_GET["medicalStats"])){
+        $strAlertMessage = array("初診病歷新增成功。", "病歷更新成功。");
+    ?>
+
+      <script language="javascript">
+        alert('<?php echo $strAlertMessage[$_GET["medicalStats"]]; ?>');
+        window.location.href='medical_list.php';
+      </script>
     <?php } ?>
      
       <?php require_once('navbar.php');  ?>
@@ -87,10 +91,10 @@
           <div class="page-header">
             <h2>瀏覽病歷</h2>
           </div>
-          <div class="col-sm-offset-10 col-sm-10">
-            <!-- <button type="button" class="btn btn-primary" onclick="location.href='first_visit.php'">
+          <div class="col-sm-offset-9 col-sm-10">
+            <button type="button" class="btn btn-primary" onclick="location.href='first_visit.php?n=<?php echo md5($row_RecMember["m_level"]); ?>'">
               <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp;新增
-            </button> -->
+            </button>
             <button type="button" class="btn btn-info" onclick="location.href='createfile.php?action=excel'">
               <span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span>&nbsp;Excel
             </button>

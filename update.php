@@ -676,6 +676,6 @@
     //echo $query_insert;
     //exit();
     mysqli_query($conn, $query_insert);
-    header("Location: medical_list.php?loginStats=1");
+    header("Location: medical_list.php?medicalStats=1");
   }
 ?>
