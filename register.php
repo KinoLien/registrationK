@@ -23,6 +23,22 @@
 			$query_insert .= "NOW())";
 		
 			mysqli_query($conn, $query_insert);
+			
+			// 自動寄送信件通知助理
+			$queryRecMemberMail = "SELECT `m_email` FROM `member` WHERE `h_id` = 1 AND `m_level` = 'assistant' ORDER BY `m_sn`";
+		    $RecMemberMail = mysqli_query($conn, $queryRecMemberMail);
+		    $row_RecMemberMail = mysqli_fetch_assoc($RecMemberMail);
+		    if(!empty($row_RecMemberMail)){
+		    	$RecHospital = mysqli_query($conn, "SELECT * FROM `hospital` WHERE `h_id` = ".$_POST["h_id"]);
+		    	$row_RecHospital = mysqli_fetch_assoc($RecHospital);
+		    	$mailcontent = "您好，\n\n新的註冊成員為：\n 帳號：".$_POST["m_account"]."\n 名稱：".$_POST["m_name"].
+		    		"\n 醫院：".$row_RecHospital['h_name']."\n\n請驗證該成員是否無誤，謝謝。";
+				$mailFrom = "From: National Registration of Ketamine Uropathy <no-reply@140.117.169.138>";
+				$mailto = $row_RecMemberMail['m_email'];
+				$mailsubject = "NRKU 新成員註冊通知";
+				mail("$mailto", "$mailsubject", "$mailcontent", "$mailFrom");
+		    }
+		    
 			header("Location: index.php?loginStats=1");
 
 		}
