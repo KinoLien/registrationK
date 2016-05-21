@@ -2,6 +2,21 @@
   header("Content-Type: text/html; charset=utf-8");
   session_start();
   include_once("connect.php");
+
+  // kino: check the id is duplicate or not
+  if(isset($_GET["action"]) && $_GET["action"] == "id_validate" ){
+    $strIdValue = $_GET["value"];
+    $query_RecMedical = "SELECT * FROM `medical` WHERE `id`='".md5($strIdValue)."'";
+    $RecMedical = mysqli_query($conn, $query_RecMedical);
+    $row_RecMedical = mysqli_fetch_assoc($RecMedical);
+    if(empty($row_RecMedical)){
+      echo 'YES';
+    }else{
+      echo 'NO';
+    }
+    exit;
+  }
+
   //選擇會員
   $query_RecMember = "SELECT * FROM `member` WHERE `m_account`='".$_SESSION["loginMember"]."'";
     $RecMember = mysqli_query($conn, $query_RecMember); 

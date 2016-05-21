@@ -65,6 +65,10 @@
           alert("病人身分證字號請勿小於六碼！");
           document.formJoin.id.focus();
           return false;
+        }else if($("input[name=_idValid]").val() != '1'){
+          alert("病人身分證字號已經存在！");
+          document.formJoin.id.focus();
+          return false;
         }
         if (!(id.charAt(0)>='A' && id.charAt(0)<='Z')) {
           alert("身分證字號第一碼必須是大寫的英文字母！")
@@ -117,9 +121,28 @@
       
       if (confirm("身分證字號："+id+"\n請確認身分證字號無誤，送出後無法再修改！\n")) return true;
           return false;
-      
-
     }
+    window.addEventListener('load', function(){
+      $('input[name=id]').on('input', function(){
+        if(this.value.length == 6){
+          $.ajax({
+            url: './input.php',
+            data: { action: 'id_validate', value: this.value },
+            success: function(res){
+              if(res == "YES"){
+                $(".glyphicon-ok").css('display', "");
+                $(".glyphicon-remove").css('display', "none");
+                $("input[name=_idValid]").val(1);
+              }else if(res == "NO"){
+                $(".glyphicon-ok").css('display', "none");
+                $(".glyphicon-remove").css('display', "");
+                $("input[name=_idValid]").val(0);
+              }
+            }
+          });
+        }
+      });
+    });
   </script>
   <style type="text/css">
   </style>
@@ -163,6 +186,9 @@
       		<p>
       			<strong>病人身分證字號</strong>：
       			<input name="id" type="text" placeholder="含英文字母前六碼">&nbsp;*
+            <input name="_idValid" type="hidden">
+            <span class="glyphicon glyphicon-ok" style="color: #5cb85c; display: none;">身分證OK</span>
+            <span class="glyphicon glyphicon-remove" style="color: #d9534f; display: none;">身分證字號重複</span>
       			<br>
       		</p>
           <!--
