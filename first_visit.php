@@ -40,6 +40,33 @@
     function makesure(){
       
     }
+
+    function checkFormID(){
+      var resMsg = "";
+      // date h_name id sex
+      var valid = true;
+      var o;
+      if(document.formJoin && (o = document.formJoin.id) ){
+        var id = o.value;
+        if (id == "") resMsg = "請輸入病人身分證字號！";
+        else if (id.length > 6) resMsg = "病人身分證字號請勿大於六碼！";
+        else if(id.length < 6) resMsg = "病人身分證字號請勿小於六碼！";
+        else if($("input[name=_idValid]").val() == '0') resMsg = "病人身分證字號已經存在！";
+        else if (!(id.charAt(0)>='A' && id.charAt(0)<='Z')) resMsg = "身分證字號第一碼必須是大寫的英文字母！";
+        else if (!(id.charAt(1)>='1' && id.charAt(1)<='2')) resMsg = "身分證字號第二碼必須是數字1或2！";
+        else{
+          for (var i = 1; i < 6; i++) {
+            if (!(id.charAt(i)>='0' && id.charAt(i)<='9')) resMsg = "身分證字號第二碼至第六碼必須為數字！";
+          }
+        }
+        if(resMsg) valid = false;
+        return { msg: resMsg, valid:valid };
+      }else{
+        return { msg: "", valid:false };
+      }
+      
+    };
+
     function checkForm(){
       if (document.formJoin.date.value == "") {
         alert("請選擇就診日期！");
@@ -51,53 +78,12 @@
         document.formJoin.h_name.focus();
         return false;
       };
-      if (document.formJoin.id.value == "") {
-        alert("請輸入病人身分證字號！");
+      var idCheck = checkFormID();
+      if(!idCheck.valid){
+        alert(idCheck.msg);
         document.formJoin.id.focus();
         return false;
-      }else{
-        id = document.formJoin.id.value;
-        if (id.length > 6) {
-          alert("病人身分證字號請勿大於六碼！");
-          document.formJoin.id.focus();
-          return false;
-        }else if(id.length < 6){
-          alert("病人身分證字號請勿小於六碼！");
-          document.formJoin.id.focus();
-          return false;
-        }else if($("input[name=_idValid]").val() != '1'){
-          alert("病人身分證字號已經存在！");
-          document.formJoin.id.focus();
-          return false;
-        }
-        if (!(id.charAt(0)>='A' && id.charAt(0)<='Z')) {
-          alert("身分證字號第一碼必須是大寫的英文字母！")
-          document.formJoin.id.focus();
-          return false;
-        };
-        for (var i = 1; i < 6; i++) {
-          if (!(id.charAt(i)>='0' && id.charAt(i)<='9')){
-            alert("身分證字號第二碼至第六碼必須為數字！");
-            document.formJoin.id.focus();
-            return false;
-          };
-        };
-        if (!(id.charAt(1)>='1' && id.charAt(1)<='2')) {
-          alert("身分證字號第二碼必須是數字1或2！");
-          document.formJoin.id.focus();
-          return false;
-        };
-        if (document.formJoin.sex.value == "Female" && id.charAt(1) == '1'){
-            alert("身分證字號第二碼與性別錯誤！");
-            document.formJoin.id.focus();
-            return false;
-        };
-        if (document.formJoin.sex.value == "Male" && id.charAt(1) == '2'){
-            alert("身分證字號第二碼與性別錯誤！");
-            document.formJoin.id.focus();
-            return false;
-        };
-      };
+      }
 
       var id = document.formJoin.id.value;
       var birth_year = document.formJoin.birth_year.value;
@@ -124,7 +110,13 @@
     }
     window.addEventListener('load', function(){
       $('input[name=id]').on('input', function(){
-        if(this.value.length == 6){
+        $("input[name=_idValid]").val("");
+        var validate = checkFormID();
+        if(!validate.valid){
+          $(".glyphicon-ok").css('display', "none");
+          $(".glyphicon-remove").text(validate.msg);
+          $(".glyphicon-remove").css('display', "");
+        }else{
           $.ajax({
             url: './input.php',
             data: { action: 'id_validate', value: this.value },
@@ -134,9 +126,10 @@
                 $(".glyphicon-remove").css('display', "none");
                 $("input[name=_idValid]").val(1);
               }else if(res == "NO"){
+                $("input[name=_idValid]").val(0);
                 $(".glyphicon-ok").css('display', "none");
                 $(".glyphicon-remove").css('display', "");
-                $("input[name=_idValid]").val(0);
+                $(".glyphicon-remove").text(checkFormID().msg);
               }
             }
           });
