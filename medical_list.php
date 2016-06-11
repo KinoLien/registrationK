@@ -110,7 +110,7 @@
                   <th style="text-align:center;">就診日期</th>
                   <th style="text-align:center;">個案識別碼</th>
                   <th style="text-align:center;">性別</th>
-                  <th style="text-align:center;">生日</th>
+                  <th style="text-align:center;">出生年月</th>
                   <?php if($row_RecMember["m_level"] == 'admin'){ ?>
                   <th style="text-align:center;">主治醫師</th>
                   <?php } ?>

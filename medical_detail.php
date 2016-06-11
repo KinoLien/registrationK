@@ -61,7 +61,7 @@
             <dd><?php echo $row_RecMedical["height"]; ?></dd>
             <dt>體重：</dt>
             <dd><?php echo $row_RecMedical["weight"]; ?></dd>
-            <dt>生日：</dt>
+            <dt>出生年月：</dt>
             <dd><?php echo $row_RecMedical["birth_year"]; ?>年<?php echo $row_RecMedical["birth_month"]; ?>月</dd>
             <dt>個案現居地：</dt>
             <dd><?php echo $row_RecMedical["location"]; ?></dd>

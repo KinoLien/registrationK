@@ -35,9 +35,9 @@
             <form class="navbar-form navbar-right" method="post" action="">
               <div class="form-group">
                 <font color="white"><?php echo $row_RecMember["m_name"];?>&nbsp;Welcome ! &nbsp;&nbsp;
-                  <a style="color:white;" href="patient_join.php">新增病人資料</a> |
+                  <a style="color:white;" href="patient_join.php">新增病患資料</a> |
                   <a style="color:white;" href="#">新增病歷</a> |
-                  <a style="color:white;" href="#">病人資料</a> |
+                  <a style="color:white;" href="#">病患資料</a> |
                   <a style="color:white;" href="#">瀏覽病歷</a>&nbsp;&nbsp;
                 </font>
               </div>  

@@ -954,7 +954,7 @@
             <br>
       		</p>
           <p>
-            <strong>生日</strong>：
+            <strong>出生年月</strong>：
             <?php echo $row_RecMedical["birth_year"]; ?>年
             <?php echo $row_RecMedical["birth_month"]; ?>月
           </p>

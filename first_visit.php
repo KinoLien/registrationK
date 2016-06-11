@@ -48,10 +48,10 @@
       var o;
       if(document.formJoin && (o = document.formJoin.id) ){
         var id = o.value;
-        if (id == "") resMsg = "請輸入病人身分證字號！";
-        else if (id.length > 6) resMsg = "病人身分證字號請勿大於六碼！";
-        else if(id.length < 6) resMsg = "病人身分證字號請勿小於六碼！";
-        else if($("input[name=_idValid]").val() == '0') resMsg = "病人身分證字號已經存在！";
+        if (id == "") resMsg = "請輸入身分證字號！";
+        else if (id.length > 6) resMsg = "身分證字號請勿大於六碼！";
+        else if(id.length < 6) resMsg = "身分證字號請勿小於六碼！";
+        else if($("input[name=_idValid]").val() == '0') resMsg = "身分證字號已經存在！";
         else if (!(id.charAt(0)>='A' && id.charAt(0)<='Z')) resMsg = "身分證字號第一碼必須是大寫的英文字母！";
         else if (!(id.charAt(1)>='1' && id.charAt(1)<='2')) resMsg = "身分證字號第二碼必須是數字1或2！";
         else{
@@ -101,7 +101,7 @@
           return false;
         };
 
-          if (confirm("身分證字號："+id+"\n生日日期：民國"+birth_year+"年"+birth_month+"月\n請確認身分證字號及生日無誤，送出後無法再修改！\n")) return true;
+          if (confirm("身分證字號："+id+"\n出生年月：民國"+birth_year+"年"+birth_month+"月\n請確認身分證字號及出生年月無誤，送出後無法再修改！\n")) return true;
           return false;
       };
       
@@ -177,7 +177,7 @@
       			<br>
       		</p>
       		<p>
-      			<strong>病人身分證字號</strong>：
+      			<strong>身分證字號</strong>：
       			<input name="id" type="text" placeholder="含英文字母前六碼">&nbsp;*
             <input name="_idValid" type="hidden">
             <span class="glyphicon glyphicon-ok" style="color: #5cb85c; display: none;">身分證OK</span>
@@ -198,7 +198,7 @@
             <br>
       		</p>
           <p>
-            <strong>生日</strong>：民國
+            <strong>出生年月</strong>：民國
             <select name="birth_year">
               <option value="">請選擇</option>
               <?php
