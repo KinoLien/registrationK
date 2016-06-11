@@ -109,7 +109,8 @@
           return false;
     }
     window.addEventListener('load', function(){
-      $('input[name=id]').on('input', function(){
+
+      function onInputCheck(){
         $("input[name=_idValid]").val("");
         var validate = checkFormID();
         if(!validate.valid){
@@ -119,7 +120,7 @@
         }else{
           $.ajax({
             url: './input.php',
-            data: { action: 'id_validate', value: this.value },
+            data: { action: 'id_validate', value: this.value, h_name: document.formJoin.h_name.value },
             success: function(res){
               if(res == "YES"){
                 $(".glyphicon-ok").css('display', "");
@@ -134,7 +135,16 @@
             }
           });
         }
+      }
+
+      $('input[name=id]').on('input', onInputCheck);
+
+      document.formJoin.h_name.addEventListener('change',function(){
+        // check again
+        if($(".glyphicon-ok").css('display') != "none" || $(".glyphicon-remove").css('display') != "none")
+          onInputCheck.call(document.formJoin.id);
       });
+
     });
   </script>
   <style type="text/css">

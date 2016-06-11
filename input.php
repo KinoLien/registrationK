@@ -6,7 +6,8 @@
   // kino: check the id is duplicate or not
   if(isset($_GET["action"]) && $_GET["action"] == "id_validate" ){
     $strIdValue = $_GET["value"];
-    $query_RecMedical = "SELECT * FROM `medical` WHERE `id`='".md5($strIdValue)."'";
+    $strHnameValue = $_GET["h_name"];
+    $query_RecMedical = "SELECT * FROM `medical` WHERE `h_name` = '".$strHnameValue."' AND `id`='".md5($strIdValue)."'";
     $RecMedical = mysqli_query($conn, $query_RecMedical);
     $row_RecMedical = mysqli_fetch_assoc($RecMedical);
     if(empty($row_RecMedical)){
