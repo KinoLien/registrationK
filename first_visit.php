@@ -41,6 +41,30 @@
       
     }
 
+    function checkTwID(id){
+      //建立字母分數陣列(A~Z)
+      var city = [1,10,19,28,37,46,55,64,39,73,82,2,11,20,48,29,38,47,56,65,74,83,21,3,12,30];
+
+      id = id.toUpperCase();
+      // 使用「正規表達式」檢驗格式
+      if (id.search(/^[A-Z](1|2)\d{8}$/i) == -1) {
+        return false;
+      } else {
+        //將字串分割為陣列(IE必需這麼做才不會出錯)
+        id = id.split('');
+        //計算總分
+        var total = city[id[0].charCodeAt(0) - 65];
+        for(var i = 1; i <= 8; i++){
+          total += eval(id[i]) * (9 - i);
+        }
+        //補上檢查碼(最後一碼)
+        total += eval(id[9]);
+
+        //檢查比對碼(餘數應為0);
+        return (total % 10 == 0);
+      }
+    }
+
     function checkFormID(){
       var resMsg = "";
       // date h_name id sex
@@ -49,16 +73,18 @@
       if(document.formJoin && (o = document.formJoin.id) ){
         var id = o.value;
         if (id == "") resMsg = "請輸入身分證字號！";
-        else if (id.length > 6) resMsg = "身分證字號請勿大於六碼！";
-        else if(id.length < 6) resMsg = "身分證字號請勿小於六碼！";
+        else if (id.length > 10) resMsg = "身分證字號請勿大於十碼！";
+        else if(id.length < 10) resMsg = "身分證字號請勿小於十碼！";
         else if($("input[name=_idValid]").val() == '0') resMsg = "身分證字號已經存在！";
         else if (!(id.charAt(0)>='A' && id.charAt(0)<='Z')) resMsg = "身分證字號第一碼必須是大寫的英文字母！";
         else if (!(id.charAt(1)>='1' && id.charAt(1)<='2')) resMsg = "身分證字號第二碼必須是數字1或2！";
         else{
-          for (var i = 1; i < 6; i++) {
-            if (!(id.charAt(i)>='0' && id.charAt(i)<='9')) resMsg = "身分證字號第二碼至第六碼必須為數字！";
+          for (var i = 1; i < 10; i++) {
+            if (!(id.charAt(i)>='0' && id.charAt(i)<='9')) resMsg = "身分證字號第二碼至第十碼必須為數字！";
           }
         }
+        if(!resMsg && !checkTwID(id)) resMsg = "身分證字號不符合產出公式 (Fake)";
+
         if(resMsg) valid = false;
         return { msg: resMsg, valid:valid };
       }else{
@@ -201,7 +227,7 @@
       		</p>
       		<p>
       			<strong>身分證字號</strong>：
-      			<input name="id" type="text" placeholder="含英文字母前六碼">&nbsp;*
+      			<input name="id" type="text" placeholder="含英文字母共十碼">&nbsp;*
             <input name="_idValid" type="hidden">
             <span class="glyphicon glyphicon-ok" style="color: #5cb85c; display: none;">身分證OK</span>
             <span class="glyphicon glyphicon-remove" style="color: #d9534f; display: none;">身分證字號重複</span>

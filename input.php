@@ -7,10 +7,7 @@
   if(isset($_GET["action"]) && $_GET["action"] == "id_validate" ){
     $strIdValue = $_GET["value"];
     $strHnameValue = $_GET["h_name"];
-    $query_RecMedical = "SELECT * FROM `medical` WHERE `h_name` = '" . $strHnameValue . "'" .
-      " AND `id`='" . md5($strIdValue) . "'" .
-      " AND `birth_year`=".$_GET["birth_year"].
-      " AND `birth_month`=".$_GET["birth_month"];
+    $query_RecMedical = "SELECT * FROM `medical` WHERE `h_name` = '".$strHnameValue."' AND `id`='".md5($strIdValue)."'";
     $RecMedical = mysqli_query($conn, $query_RecMedical);
     $row_RecMedical = mysqli_fetch_assoc($RecMedical);
     if(empty($row_RecMedical)){
@@ -20,6 +17,7 @@
     }
     exit;
   }
+
 
   //選擇會員
   $query_RecMember = "SELECT * FROM `member` WHERE `m_account`='".$_SESSION["loginMember"]."'";
