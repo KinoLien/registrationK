@@ -137,9 +137,6 @@
     window.addEventListener('load', function(){
 
       function onInputCheck(){
-        var id = document.formJoin.id.value;
-        var n = document.formJoin.h_name.value;
-        if(!n || !id) return;
         $("input[name=_idValid]").val("");
         var validate = checkFormID();
         if(!validate.valid){
@@ -147,43 +144,32 @@
           $(".glyphicon-remove").text(validate.msg);
           $(".glyphicon-remove").css('display', "");
         }else{
-          var y = document.formJoin.birth_year.value;
-          var m = document.formJoin.birth_month.value;
-          if(y && m){
-            $.ajax({
-              url: './input.php',
-              data: { 
-                action: 'id_validate',
-                value: id,
-                h_name: n,
-                birth_year: y,
-                birth_month: m
-              },
-              success: function(res){
-                if(res == "YES"){
-                  $(".glyphicon-ok").css('display', "");
-                  $(".glyphicon-remove").css('display', "none");
-                  $("input[name=_idValid]").val(1);
-                }else if(res == "NO"){
-                  $("input[name=_idValid]").val(0);
-                  $(".glyphicon-ok").css('display', "none");
-                  $(".glyphicon-remove").css('display', "");
-                  $(".glyphicon-remove").text(checkFormID().msg);
-                }
+          $.ajax({
+            url: './input.php',
+            data: { action: 'id_validate', value: this.value, h_name: document.formJoin.h_name.value },
+            success: function(res){
+              if(res == "YES"){
+                $(".glyphicon-ok").css('display', "");
+                $(".glyphicon-remove").css('display', "none");
+                $("input[name=_idValid]").val(1);
+              }else if(res == "NO"){
+                $("input[name=_idValid]").val(0);
+                $(".glyphicon-ok").css('display', "none");
+                $(".glyphicon-remove").css('display', "");
+                $(".glyphicon-remove").text(checkFormID().msg);
               }
-            });
-          }else{
-            $(".glyphicon-ok").css('display', "none");
-            $(".glyphicon-remove").css('display', "none");
-          }
+            }
+          });
         }
       }
 
-      $('select[name=h_name]').on('change', onInputCheck);
       $('input[name=id]').on('input', onInputCheck);
-      $('select[name=birth_year]').on('change', onInputCheck);
-      $('select[name=birth_month]').on('change', onInputCheck);
 
+      document.formJoin.h_name.addEventListener('change',function(){
+        // check again
+        if($(".glyphicon-ok").css('display') != "none" || $(".glyphicon-remove").css('display') != "none")
+          onInputCheck.call(document.formJoin.id);
+      });
     });
   </script>
   <style type="text/css">
