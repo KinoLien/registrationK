@@ -13,9 +13,9 @@
     $query_RecMedical = "SELECT * FROM `medical` WHERE `sn`='".$_GET["id"]."'";
     $RecMedical = mysqli_query($conn, $query_RecMedical);
     $row_RecMedical = mysqli_fetch_assoc($RecMedical);
-    if($row_RecMedical["doctor"] != $row_RecMember["m_name"]){
-      header("Location: medical_list.php");
-    }
+    // if($row_RecMedical["doctor"] != $row_RecMember["m_name"]){
+    //   header("Location: medical_list.php");
+    // }
   }elseif ($row_RecMember["m_level"] == 'assistant'){
     $query_RecMedical = "SELECT * FROM `medical` WHERE `sn`='".$_GET["id"]."'";
     $RecMedical = mysqli_query($conn, $query_RecMedical);
