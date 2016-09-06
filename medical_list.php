@@ -4,7 +4,9 @@
   include_once("connect.php");
   include_once("check.php");
 
+  $isAdmin = false;
   if($row_RecMember["m_level"] == 'admin'){
+    $isAdmin = true;
     $query_RecMedical = "SELECT * FROM `medical` ORDER BY `joindatetime` DESC";
     $RecMedical = mysqli_query($conn, $query_RecMedical);
   }elseif ($row_RecMember["m_level"] == 'doctor') {
@@ -125,7 +127,7 @@
                     <?php 
                       $time = date("Y-m-d H:i:s");
                       $temp = (strtotime($time)- strtotime($row_RecMedical["joindatetime"]))/(60*60*24);
-                      if($temp < 10){
+                      if($temp < 10 || $isAdmin){
                     ?>
                     <a href="?action=delete&id=<?php echo $row_RecMedical["sn"];?>" onClick="return deletesure();">
                       <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
